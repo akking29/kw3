@@ -1,0 +1,26 @@
+{
+  "name": "kw3",
+  "version": "1.0.0",
+  "description": "\"# 09-WeatherApp\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.8",
+    "gulp": "^3.9.1",
+    "inspect": "0.0.2"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.7.0",
+    "gulp-inject": "^5.0.2",
+    "gulp-livereload": "^4.0.1",
+    "gulp-open": "^3.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "natives": "^1.1.6",
+    "wiredep": "^4.0.0"
+  }
+}

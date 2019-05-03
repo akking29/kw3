@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name=”description” content="A communications company">
+    <meta property=”og:title” content="KingWorks 3" />
+    <meta name="theme-color" content="#f15a24">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2793e6">
+    <title>KingWorks 3 | Communications</title>
+    <link rel="icon" href="kw3_big.ico">
+    <link rel="icon" href="app/assets/logos/kwl-tri-orange.png">
+    <link rel="stylesheet" href="/app/style/landing.css">
+    <link rel="stylesheet" href="/app/style/edits.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Questrial" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="/app/js/jquery.min.js"></script>
+    <script src="/app/js/jquery-ui.min.js"></script>
+    <div class="kw3-nav-banner">
+        <h3><span><i class="fas fa-phone"></i></span>set up an appointment now!</h3>
+    </div>
+    <div class="kw3-nav">
+        <div class="kw3-nav-content">
+            <div class="kw3-nav-title" id="kw3-title"><a></a></div>
+            <ul>
+                <li class="chat-button"><a id="changesButton"><span class="nav-link">Get Started</span><i class="fas fa-book mobile-icon"></i></a></li>
+                <li><a id="changesButton"><span class="nav-link">Contact Us</span><i class="fas fa-book mobile-icon"></i></a></li>
+                <li><a id="vsButton"><span class="nav-link">Our Team</span><span class="mobile-icon vs">vs</span></a></li>
+                <li class="drawer-link"><a id="rankingsButton" class="extra"><span class="nav-link">Services<i class="fas fa-chevron-down nav-extra"></i></span><i class="fas fa-list-ol mobile-icon"></i></a>
+                    <div class="kw3-nav-drawer">
+                        <div class="content">
+                            <ul>
+                                <li class="promo"><i class="fas fa-wifi"></i>Unified Communications as a Service</li>
+                                <li class="kw3-feature-item x2"><i class="fas fa-phone"></i>Contact Center as a Service</li>
+                                <li class="kw3-feature-item x2"><i class="fas fa-shield-alt"></i>IT Security as a Service</li>
+                                <li class="kw3-feature-item x2"><i class="fas fa-save"></i>Software as a Service</li>
+                                <li class="kw3-feature-item x2"><i class="fas fa-circle"></i>IT Asset Disposal</li>
+                            </ul>
+                                <div style="display: block;clear: both;content: '';"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="contact-modal" class="kw3-contact">
+        <div class="kw3-form-container">
+            <form id="contact-form" action="mailto:akking@live.com" method="post" enctype="text/plain">
+                <label for="name"> who are you? </label>
+                <input type="text" name="name" id="name">
+                <label for="email"> email </label>
+                <input type="text" name="email" id="email">
+                <label for="subject"> whats up? </label>
+                <input type="text" name="subject" id="subject">
+                <label for="message">tell me more </label>
+                <textarea type="text" form="contact-form" id="message"></textarea>
+                <button type='submit' value="Send">send</button>
+                <button type='reset' value="Reset">reset</button>
+            </form>
+        </div>
+    </div>
+    <div id="PP-modal" class="kw3-contact">
+        <p></p>
+    </div>
+    <a id="home"></a>
+    <div class="kw3-landing">
+        <div class="kw3-landing-feature" style="display: none;">
+            <div class="kw3-landing-image">
+            </div>
+
+        </div>
+    </div>
+        <div class="kw3-feature-container">
+            <a href="" id="awards"></a>
+            <h2 class="kw3-feature-title" style="margin: 50px auto 0;padding-bottom:10px;">Start building your communications platform with kingworks</h2>
+            <h3 class="kw3-feature-subtitle" style="text-align: center;font-size: 18px;line-height: 1.5;max-width:1024px;margin:0 auto 50px;">We offer a full suite of communication products to ensure your business uptime is always 100%. introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h3>
+            <div class="kw3-feature-grid award">
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h2 class="kw3-feature-title">UCAAS</h2>
+                    <p>Unified Communications as a Service</p>
+                    <p style="font-weight: 200;font-style: italic;">Emininate your maintenance costs while lowering setup expenses at the same time</p>
+                    <a href="" class="kw3-cta-button">learn more</a>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h2 class="kw3-feature-title">CCAAS</h2>
+                    <p>Contact Center as a Service</p>
+                    <p style="font-weight: 200;font-style: italic;">99.9% reliability and full customization with built in security</p>
+                    <a href="" class="kw3-cta-button">learn more</a>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="kw3-feature-title">iSAAS</h2>
+                    <p>IT Security as a Service</p>
+                    <p style="font-weight: 200;font-style: italic;">We offer a full range of security products, from server management to IT assets disposition</p>
+                    <a href="" class="kw3-cta-button">learn more</a>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-save"></i>
+                    </div>
+                    <h2 class="kw3-feature-title">SAAS</h2>
+                    <p>Software as a Service</p>
+                    <p style="font-weight: 200;font-style: italic;">We offer completely custom, simple to use solutions, from applications to websites</p>
+                    <a href="" class="kw3-cta-button">learn more</a>
+                </div>
+            </div>
+        </div>
+    <div class="float-wrapper tri">
+        <div class="image-right-container">
+            <div class="triangle"></div>
+            <div class="triangle2"></div>
+            <div class="triangle3"></div>
+        </div>
+        <div class="kw3-feature-container quote">
+            <div class="kw3-feature-block quote">
+                <h3 class="kw3-feature-block-title quote" id="nameGame" style="color: #333333;">We build software solutions</h3>
+                <a href="" id="changes"></a>
+                <h4 class="kw3-feature-title" id="nameGameSub">A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider. With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h4>
+                <button class="kw3-cta-button">learn more</button>
+            </div>
+        </div>
+        <div style="display: block;content:'';clear:both;"></div>
+    </div>
+    <div class="kw3-feature-container partners">
+        <h3 class="kw3-feature-title" style="color: #333333;">Our Partners</h3>
+        <div class="kw3-feature-item partner">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <img id="windstreamLogo" src="app/assets/logos/windstream-logo1.jpg" />
+                </div>
+                <div class="kw3-feature-text">
+                    <p>With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business..</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item partner">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <img src="app/assets/logos/ringcentral-logo.png" />
+                </div>
+                <div class="kw3-feature-text">
+                    <p>A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item partner">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <img src="app/assets/logos/effortless.png" />
+                </div>
+                <div class="kw3-feature-text">
+                    <p>A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kw3-feature-container it">
+        <i class="fas fa-circle-notch" style="color: #f15a24;font-size: 42px;"></i>
+        <i class="far fa-circle" style="color: #f15a24;font-size: 42px;"></i>
+        <i class="fas fa-adjust" style="color: #f15a24;font-size: 42px;"></i>
+        <i class="fas fa-circle" style="color: #f15a24;font-size: 42px;"></i>
+        <h3 class="kw3-feature-title" style="color: #333333;">IT Assets Disposition</h3>
+        <h4>With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs. With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h4>
+        <button class="kw3-cta-button">learn more</button>
+        <div class="kw3-feature-item it">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <i class="fas fa-circle-notch"></i>
+                </div>
+                <div class="kw3-feature-text">
+                    <h2>Get in touch</h2>
+                    <p>With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item it">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <i class="far fa-circle"></i>
+                </div>
+                <div class="kw3-feature-text">
+                    <h2>On site visit</h2>
+                    <p>A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item it">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="kw3-feature-text">
+                    <h2>Asset pick-up & removal</h2>
+                    <p>With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item it">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image">
+                    <i class="fas fa-circle"></i>
+                </div>
+                <div class="kw3-feature-text">
+                    <h2>Data wiped and devices disposed</h2>
+                    <p>A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="float-wrapper">
+        <div class="kw3-feature-container quote">
+            <div class="kw3-feature-block quote">
+                <h3 class="kw3-feature-block-title quote" id="nameGame" style="color: #333333;">Unified Communications as a Service</h3>
+                <a href="" id="changes"></a>
+                <h4 class="kw3-feature-title" id="nameGameSub">A hosted phone system, also known as Unified Communications as a Service (or UCaaS) is a virtual phone system hosted for you by a service provider. With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h4>
+                <button class="kw3-cta-button">learn more</button>
+            </div>
+        </div>
+        <div class="image-right-container">
+            <img src="app/assets/img/uCaaS.png" />
+        </div>
+        <div style="display: block;content:'';clear:both;"></div>
+    </div>
+    <div class="kw3-feature-container price" style="padding-top: 0;">
+        <div class="kw3-feature-item price">
+            <div class="kw3-feature-item-content">
+                <div class="kw3-feature-image" style="color:#f15a24;text-align: center;">
+                    <i class="far fa-comment-alt" style="font-size: 170px"></i>
+                </div>
+                <h3 class="kw3-feature-title price" style="color: #333333;">Get in touch with us!</h3>
+                <div class="kw3-feature-text">
+                    <p style="text-align: center;">We're always available to talk smack & trash, just let us know your needs and we'll jump all over like emilia with a cheez-it. With a hosted PBX, introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</p>
+                </div>
+                <div class="kw3-feature-container small">
+                    <div class="kw3-feature-item icon x3">
+                        <i title="chat now" class="fas fa-comment-alt active"></i>
+                        <p class="icon-on">Denny's available!</p>
+                    </div>
+                    <div class="kw3-feature-item icon x3">
+                        <i title="schedule a call" class="fas fa-phone"></i>
+                    </div>
+                    <div class="kw3-feature-item icon x3">
+                        <i title="email us" class="fas fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="kw3-footer">
+            <div class="kw3-container">
+                <ul class="kw3-footer-links logo" style="float: none;">
+                    <li>
+                        <img style="height: 20px;width:auto;" src="app/assets/logos/kwl-horizontal-black.png"/>
+                    </li>
+                </ul>
+                <ul class="kw3-footer-links location" style="float: right;">
+                    <li>
+                        <div class="location-bubble"></div>
+                    </li>
+                    <li style="text-align: center;">Located in San Diego</li>
+                    <li style="text-align: center;"><span><i class="fab fa-facebook"></i></span><span><i class="fab fa-linkedin"></i></span><span><i class="fab fa-instagram"></i></span></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">services</li>
+                    <li><a>uCaaS</a></li>
+                    <li><a>cCaaS</a></li>
+                    <li><a>iSaaS</a></li>
+                    <li><a>SaaS</a></li>
+                    <li><a>IT Disposal</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">about</li>
+                    <li><a>Our Team</a></li>
+                    <li><a>Location</a></li>
+                    <li><a>General Pricing</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">our partners</li>
+                    <li><a>Effortless</a></li>
+                    <li><a>Ring Central</a></li>
+                    <li><a>Windstream</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">contact</li>
+                    <li><a>Chat with us now</a></li>
+                    <li><a>Schedule a call</a></li>
+                    <li><a>Email us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+<script src="/app/js/jtest.js?v2"></script>
+<script type="text/javascript">
+$(document).on('ready', function() {
+    if ($('.kw3-landing-logo.text').css('width') === '300px') {
+        $('.kw3-landing-logo.tri').addClass('stop');
+        $('.kw3-landing-logo.text').addClass('active');
+        setTimeout(function() {
+            $('.kw3-landing-subtitle').fadeIn('slow');
+            $('#landingSub').fadeIn('slow');
+        }, 3000);
+    } else {
+        setTimeout(function() {
+            $('.kw3-landing-logo.tri').addClass('stop');
+            $('.kw3-landing-logo.text').addClass('active');
+            $('.kw3-landing-subtitle').fadeIn('slow');
+            $('#landingSub').fadeIn('slow');
+        }, 00);
+    }
+})
+</script>
+
+</html>

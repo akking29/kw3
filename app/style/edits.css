@@ -1,0 +1,1092 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.kw3-feature-item.icon i.active {
+    animation: bounce 2s infinite;
+}
+
+footer {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height: 100px;
+    background-color: #f1f1f1;
+    border-top: 5px solid #f1f1f1;
+    padding: 30px 0 60px;
+    position: relative;
+}
+
+footer li {
+    color: #333333;
+    margin: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer li img {
+    margin-bottom: 5px;
+}
+
+footer li span {
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+footer li span i {
+    font-size: 20px;
+}
+
+.kw3-footer-links.logo {
+    margin-bottom: 10px;
+}
+
+.kw3-footer-links.logo img {
+    border-bottom: 2px solid #333333;
+    padding-bottom: 10px;
+}
+
+.footer-link-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: 15px;
+}
+
+.kw3-footer-links.location {
+    top: -170px;
+    right: 0px;
+    position: absolute;
+    overflow: visible;
+}
+
+.kw3-footer-links.location li {
+    margin: 15px;
+}
+
+.kw3-footer-links.location li:first-of-type {
+    margin-bottom: 30px;
+}
+
+.location-bubble {
+    background-image: url(/app/assets/img/map_home.png);
+    background-position: 50% 40%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #f1f1f1;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'lato', sans-serif;
+}
+
+#weeklyArticle {
+    margin: 0px auto 50px;
+    padding-top: 20px;
+}
+
+#nameGame {
+    text-align: left;
+    width: auto;
+    font-family: 'lato';
+    letter-spacing: 1px;
+    border-bottom: 0px;
+}
+
+#nameGameSub {
+    border-top: 0px;
+    color: #333333;
+    text-align: left;
+    font-style: none;
+    padding-top: 5px;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: transparent;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 10px 0 20px;
+    text-transform: none;
+    padding-left: 0px;
+}
+
+#landingSub {
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'lato';
+    letter-spacing: 1px;
+    font-style: italic;
+    display: none;
+    font-weight: 500;
+}
+
+.kw3-feature-block button {
+    background: #f15a24;
+    border-color: #f15a24;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    letter-spacing: 1.5px;
+}
+
+.kw3-nav li a {
+    font-weight: bold;
+    color: #333333;
+}
+
+.kw3-nav li.chat-button {
+    background: #f15a24;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.kw3-nav li.chat-button a {
+    color: #ffffff;
+}
+
+.kw3-nav li.chat-button a:hover {
+    border-bottom: 0px;
+}
+
+.kw3-nav li a.extra {
+    cursor: default;
+    border-color: transparent;
+}
+
+.kw3-nav li a.extra:hover {
+    border-bottom: 0px;
+}
+
+i.nav-extra {
+    margin-left: 8px;
+    top: -1px;
+    position: relative;
+    font-size: 10px;
+}
+
+.kw3-feature-block button:hover {
+    cursor: pointer;
+}
+
+.kw3-feature-container {
+    padding-bottom: 100px;
+}
+
+.kw3-feature-container,
+.float-wrapper,
+.kw3-feature-container.partners {
+    padding: 0 50px;
+}
+
+.kw3-feature-container.partners {
+    padding: 0 100px;
+}
+
+.kw3-container {
+    position: relative;
+}
+
+.kw3-feature-item-content:hover {
+    box-shadow: 0 0 0px 0 #ddd;
+    cursor: default;
+    border-color: transparent;
+}
+
+.kw3-status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    color: orange;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.kw3-status.cold {
+    color: #2793e6;
+}
+
+.kw3-status .status {
+    position: relative;
+    top: 4px;
+}
+
+.kw3-nav {
+    background: transparent;
+    transition: all .3s ease;
+    box-shadow: 0 0 0px 0;
+    position: relative;
+}
+
+.kw3-nav.scrolled {
+    position: fixed;
+    background: #ffffff;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0 0 10px 0 #cccccc;
+    top: 0px;
+}
+
+.kw3-nav.scrolled.modal {
+    box-shadow: 0 0 0 0;
+    background: transparent;
+}
+
+.kw3-nav ul li {
+    position: relative;
+}
+
+.kw3-nav ul li .notification {
+    position: absolute;
+    bottom: 16px;
+    right: -5px;
+    color: red;
+}
+
+.kw3-landing {
+    position: relative;
+    background-image: url(/app/assets/img/background.jpg);
+    background-size: cover;
+    height: 600px;
+    min-height: 96vh;
+    padding: 20px 0 50px;
+    background-position: 50% 50%;
+    margin-top: -50px;
+    border-bottom: 0px;
+}
+
+.kw3-landing-feature {
+    position: relative;
+    top: 10%;
+    margin-top: -200px;
+    padding-top: 0;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.kw3-nav li a {
+    background: transparent;
+}
+
+.kw3-nav.scrolled li.chat-button {
+    background: #6eb7ec;
+}
+
+.kw3-nav.scrolled li.chat-button a {
+    color: #ffffff;
+    background: #6eb7ec;
+}
+
+.kw3-nav.scrolled li a {
+    color: #333333;
+}
+
+.kw3-nav-title {
+    position: absolute;
+    height: 50px;
+    width: 225px;
+    background: url('../assets/logos/kwl-horizontal-white.png');
+    background-position: 10% 50%;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.kw3-nav.scrolled .kw3-nav-title {
+    background: url('../assets/logos/kwl-tri-orange.png');
+    background-position: 0% 50%;
+    background-size: cover;
+    background-size: 13%;
+    background-repeat: no-repeat;
+}
+
+.kw3-landing-logo {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background: url('../assets/logos/kwl-tri.svg') white;
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.kw3-landing-logo.stop {
+    left: 0;
+    margin: 0 20px;
+}
+
+.kw3-landing-logo.text {
+    visibility: hidden;
+    opacity: 0;
+    height: 100px;
+    width: 500px;
+    left: -13px;
+    background: url('../assets/logos/kwl-horizontal-text.svg') white;
+    fill: orange;
+    background-position: 10% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 20px;
+    position: relative;
+    transition: all 2s ease in out;
+}
+
+.kw3-landing-logo.text.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kw3-trophy-title {
+    height: 25px;
+    width: 25px;
+    background: url('../app/assets/img/kw3_white.png');
+}
+
+.kw3-landing-subtitle {
+    color: #333333;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: none;
+    left: 20px;
+    text-align: left;
+    position: absolute;
+}
+
+.kw3-feature-item .power-boys {
+    background: #f36969;
+}
+
+.kw3-feature-grid.award .feature-title-main {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 42px;
+    color: #6eb7ec;
+    font-weight: bold;
+}
+
+.kw3-feature-item.award {
+    height: 100%;
+}
+
+.kw3-feature-item.award .kw3-feature-image {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: #f15a24;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.kw3-feature-item.award .kw3-feature-image i {
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+    font-size: 190px;
+    color: #ffffff;
+}
+
+.kw3-feature-item.award p {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.kw3-feature-banner.trophys {
+    padding-top: 25px;
+    background: #333333;
+    border: 0px;
+}
+
+.kw3-feature-banner.trophys .banner-item {
+    text-align: center;
+    font-size: 32px;
+}
+
+.kw3-feature-banner.trophys.x1 .banner-item {
+    width: 100%;
+}
+
+.kw3-feature-banner.trophys.x2 .banner-item {
+    width: 50%;
+}
+
+.kw3-feature-banner.trophys.x4 .banner-item {
+    width: 25%;
+}
+
+#footballTrophy {
+    position: absolute;
+    font-size: 28px;
+    color: #fff;
+    left: 63px;
+    top: 92px;
+}
+
+.kw3-cta-button {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    background: #f15a24;
+    padding: 10px 0;
+    display: block;
+    width: 120px;
+    font-size: 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.kw3-cta-button:hover {
+    cursor: pointer;
+}
+
+.kw3-feature-item.award .kw3-feature-title {
+    font-family: "Questrial", sans-serif;
+    background: transparent;
+    line-height: 1;
+    font-size: 22px;
+    border-bottom: 5px solid;
+    padding: 30px 0px 0px;
+    text-align: center;
+    color: #333333;
+    border-bottom: 0px;
+}
+
+.kw3-feature-item.award {
+    font-family: "lato", sans-serif;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+    background: #ffffff;
+    border: 15px solid white;
+    padding: 20px 20px 0px;
+}
+
+.kw3-feature-item.award .kw3-cta-button {
+    margin: 20px auto;
+}
+
+.float-wrapper {
+    max-width: 1500px;
+    margin: 0 auto 100px;
+    transition: all .5s ease-in-out;
+}
+
+.float-wrapper.tri {
+    margin: 50px auto 50px;
+}
+
+.float-wrapper img {
+    transition: all .5s ease;
+}
+
+.float-wrapper:hover img {
+    box-shadow: 0 0 0px 10px #f15a24;
+}
+
+.float-wrapper.tri .kw3-feature-block.quote {
+    padding-right: 0;
+    padding-left: 80px;
+}
+
+.float-wrapper.tri .kw3-feature-container.quote {
+    top: 0;
+}
+
+.float-wrapper .image-right-container .triangle,
+.float-wrapper .image-right-container .triangle2,
+.float-wrapper .image-right-container .triangle3,
+.triangle,
+.triangle2,
+.triangle3 {
+    transition: .5s all ease;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background: #3333333b;
+    left: 0;
+}
+
+.kw3-feature-item.award .triangle,
+.kw3-feature-item.award .triangle2,
+.kw3-feature-item.award .triangle3 {
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    background: #f15a24;
+}
+
+.float-wrapper .image-right-container .triangle2 {
+    transition: 1s all ease;
+    height: 350px;
+    width: 375px;
+    background: #3333337a;
+}
+
+.float-wrapper .image-right-container .triangle3 {
+    height: 400px;
+    width: 450px;
+    background: #333333bd;
+}
+
+.float-wrapper.tri:hover .image-right-container .triangle {
+    left: -80px;
+}
+
+.float-wrapper.tri:hover .image-right-container .triangle2 {
+    left: -40px;
+}
+
+.float-wrapper:hover .image-right-container .triangle3 {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.kw3-feature-container.quote {
+    background: #ffffff;
+    width: 60%;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+.kw3-feature-block.quote {
+    padding-right: 80px;
+    padding-left: 0px;
+}
+
+.image-right-container {
+    float: left;
+    width: 40%;
+    position: relative;
+    height: 500px;
+}
+
+.image-right-container img {
+    height: 500px;
+    width: 535px;
+    position: absolute;
+    right: 20px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px 0 #cccccc;
+    box-shadow: 0 0 20px 0 #cccccc;
+}
+
+.kw3-landing-image {
+    width: 1010px;
+    height: 300px;
+}
+
+.kw3-feature-container {
+    max-width: 1500px;
+    padding-top: 50px;
+}
+
+footer {
+    background-size: cover;
+    background-position: 50%;
+}
+
+.kw3-feature-container.it {
+    padding-top: 50px;
+}
+
+.kw3-feature-container.it .kw3-cta-button {
+    border: 0px;
+    border-radius: 2px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: auto;
+    padding: 10px 15px;
+    margin-bottom: 100px;
+}
+
+.kw3-feature-container.partners .kw3-feature-title,
+.kw3-feature-text,
+.kw3-feature-item-content p {
+    background: #ffffff;
+}
+
+.kw3-feature-item-content .kw3-feature-text p {
+    text-align: left;
+}
+
+.kw3-feature-text p {
+    text-align: center;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.st0 {
+    fill: #f15a24;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: dash 5s linear forwards;
+}
+
+#windstreamLogo {
+    top: 20%;
+}
+
+.kw3-feature-item.partner,
+.kw3-feature-item.it {
+    height: auto;
+}
+
+.kw3-feature-item.it .kw3-feature-image {
+    height: auto;
+}
+
+.kw3-feature-item.it .kw3-feature-image i {
+    font-size: 72px;
+    padding: 0 20px;
+}
+
+.kw3-feature-item.it h2 {
+    margin-top: 35px;
+    text-align: left;
+}
+
+.kw3-feature-container.it h4 {
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.kw3-feature-container.it .kw3-feature-title {
+    text-align: left;
+    background: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.kw3-feature-item.partner .kw3-feature-item-content,
+.kw3-feature-item.it .kw3-feature-item-content {
+    border: 1px solid #cccccc;
+    min-height: 350px;
+    -webkit-box-shadow: 0 0 10px 0 #cccccc;
+    box-shadow: 0 0 10px 0 #cccccc;
+    transition: all .5s ease;
+}
+
+.kw3-feature-item.it .kw3-feature-item-content {
+    min-height: auto;
+    border: 0px;
+    box-shadow: 0 0 0 0;
+    min-height: 300px;
+    padding: 20px 0 0;
+    border-radius: 2px;
+}
+
+.kw3-feature-item.it .kw3-feature-item-content i {
+    transition: .5s ease-in-out;
+}
+
+.kw3-feature-item.it .kw3-feature-item-content:hover {
+    box-shadow: 0 0 0px 5px #333333;
+    cursor: pointer;
+}
+
+.kw3-feature-item.it .kw3-feature-item-content:hover i {
+    color: #f15a24;
+    top: -10px;
+}
+
+.kw3-nav-banner {
+    padding: 10px;
+    background: #6eb7ec;
+}
+
+.kw3-nav-banner:hover {
+    cursor: pointer;
+}
+
+.kw3-nav-banner h3 {
+    font-size: 14px;
+    margin: 0;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.kw3-nav-banner h3 span {
+    padding: 0 5px;
+}
+
+.kw3-nav ul li {
+    position: static;
+}
+
+@media screen and (max-width: 1500px) {
+    .kw3-nav.scrolled .kw3-nav-title {
+        background-position: 5% 50%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .kw3-landing {
+        background-position: 25% 50%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .kw3-nav.scrolled .kw3-nav-title {
+        background-position: 5% 50%;
+    }
+
+    .float-wrapper.tri .image-right-container {
+        height: 400px;
+    }
+
+    .float-wrapper.tri .triangle {
+        height: 200px;
+        width: 200px;
+    }
+
+    .float-wrapper.tri .triangle2 {
+        height: 250px;
+        width: 275px;
+    }
+
+    .float-wrapper.tri .triangle3 {
+        height: 300px;
+        width: 350px;
+    }
+
+    .kw3-feature-container.quote {
+        padding-top: 0px;
+    }
+
+    .float-wrapper.tri .kw3-feature-block.quote {
+        padding-left: 40px;
+    }
+
+    .kw3-feature-container.partners {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 16px !important;
+    }
+
+    .kw3-feature-item {
+        height: 100%;
+    }
+
+    .kw3-feature-item.short {
+        height: 100%;
+    }
+
+    .kw3-feature-grid.award .feature-title-main {
+        margin: 50px 0;
+    }
+
+    .kw3-nav li a {
+        font-size: 13px;
+    }
+
+    .kw3-feature-item {
+        margin: 20px 0;
+    }
+
+    .float-wrapper.tri {
+        padding: 0 30px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle {
+        left: -20px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle2 {
+        left: -10px;
+    }
+
+    .kw3-feature-block-title.quote {
+        font-size: 36px;
+    }
+
+    #nameGameSub {
+        font-size: 16px;
+    }
+
+    .kw3-nav li {
+        margin: 7px 10px;
+    }
+
+    .kw3-nav li .kw3-nav-drawer {
+        left: -30px;
+    }
+
+    .kw3-feature-item.award {
+        width: 50%;
+    }
+
+    .kw3-feature-container.partners {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .float-wrapper.tri .image-right-container {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .float-wrapper.tri .triangle,
+    .float-wrapper.tri .triangle2,
+    .float-wrapper.tri .triangle3 {
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .float-wrapper.tri .triangle2,
+    .float-wrapper.tri .triangle {
+        margin-left: 0;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle,
+    .float-wrapper.tri .image-right-container .triangle {
+        left: 60px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle2,
+    .float-wrapper.tri .image-right-container .triangle2 {
+        left: 90px;
+    }
+
+    .kw3-feature-container.quote {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .float-wrapper.tri .kw3-feature-block.quote {
+        padding-left: 0;
+    }
+
+    #nameGame,
+    #nameGameSub {
+        text-align: center;
+        padding: 0;
+    }
+
+    .kw3-feature-block button {
+        margin: 0 auto;
+    }
+
+    .kw3-feature-item.partner .kw3-feature-item-content,
+    .kw3-feature-item.it .kw3-feature-item-content {
+        min-height: 340px;
+    }
+
+    .kw3-feature-container.partners {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .kw3-nav.scrolled .kw3-nav-title{
+    background-position: 12% 50%;
+  }
+    .kw3-feature-item.award {
+      width: 100%;
+    }
+    .kw3-feature-item.partner .kw3-feature-item-content,
+    .kw3-feature-item.it .kw3-feature-item-content {
+        min-height: auto;
+    }
+    .kw3-feature-item-content .kw3-feature-text p {
+      text-align: center;
+    }
+
+    .kw3-landing {
+        height: 85vh;
+        min-height: 500px;
+    }
+
+    .kw3-landing-logo.tri {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
+        z-index: 100000000;
+        transition: all 0s;
+    }
+
+    .kw3-landing-logo.tri.stop {}
+
+    .kw3-landing-logo.text {
+        left: 0;
+        margin: 0 auto;
+        width: 300px;
+        height: 70px;
+    }
+
+    .kw3-landing-subtitle {
+        text-align: center;
+        position: relative;
+        margin: 10px auto;
+        left: 0;
+    }
+
+    .kw3-nav-title {
+        left: -10px;
+    }
+
+    .kw3-landing {
+      min-height: 300px;
+      height: 50vh;
+      min-height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    .kw3-feature-container {
+      padding-top: 0;
+    }
+
+    .kw3-landing-feature {
+        padding-top: 50px;
+    }
+
+    #changes-container p {
+        width: 100%;
+    }
+
+    .kw3-feature-grid.award .feature-title-main {
+        margin: 20px 0;
+    }
+
+    #vsButton {
+        padding: 7.5px;
+    }
+
+    .kw3-nav li a .mobile-icon.vs {
+        font-size: 13px;
+    }
+
+    .kw3-feature-item.award .kw3-feature-title {
+        line-height: 1.5;
+        padding-bottom: 0;
+    }
+
+    .kw3-feature-item.award p {
+        margin: 15px 0 10px;
+    }
+
+    .float-wrapper.tri {
+        padding: 0 20px;
+    }
+
+}

@@ -1,0 +1,45 @@
+//Mixins
+@mixin background-image ($image, $size, $position, $repeat) {
+    background-image: $image;
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+@mixin center-content ($position) {
+    position: $position;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin size-adjust ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin margin-sides ($left, $right) {
+    margin-right: $right;
+    margin-left: $left;
+}
+
+@mixin margin-vertical ($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin padding-sides ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin padding-vertical ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+}

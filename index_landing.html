@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name=”description” content="A communications company">
+    <meta property=”og:title” content="KingWorks 3" />
+    <meta name="theme-color" content="#f15a24">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2793e6">
+    <title>KingWorks 3 | Communications</title>
+    <link rel="icon" href="kw3_big.ico">
+    <link rel="icon" href="app/assets/logos/kwl-tri-orange.png">
+    <link rel="stylesheet" href="/app/style/landing.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Questrial" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<style type="text/css">
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#weeklyArticle {
+    margin: 0px auto 50px;
+    padding-top: 20px;
+}
+
+.kw3-feature-item-content:hover {
+    box-shadow: 0 0 0px 0 #ddd;
+    cursor: default;
+    border-color: transparent;
+}
+
+.kw3-feature-item {
+    height: 1250px;
+}
+
+.kw3-feature-item.short {
+    height: 1130px;
+}
+
+.kw3-status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    color: orange;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.kw3-status.cold {
+    color: #2793e6;
+}
+
+.kw3-status .status {
+    position: relative;
+    top: 4px;
+}
+
+.kw3-nav {
+    display: none;
+}
+
+.kw3-nav ul li {
+    position: relative;
+}
+
+.kw3-nav ul li .notification {
+    position: absolute;
+    bottom: 16px;
+    right: -5px;
+    color: red;
+}
+
+.kw3-landing {
+    position: relative;
+    background-image: none;
+    background: #ffffff;
+    height: 100vh;
+    min-height: 800px;
+    padding: 20px 0 50px;
+}
+
+.kw3-landing-feature {
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    padding-top: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.kw3-nav-title {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url('app/assets/logos/kw3.png');
+    background-position: 10% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kw3-landing-logo {
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    background: url('app/assets/logos/kwl-tri.svg') white;
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 2s ease;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.kw3-landing-logo.stop {
+    left: 0;
+    margin: 0 20px;
+}
+
+.kw3-landing-logo.text {
+    visibility: hidden;
+    opacity: 0;
+    height: 100px;
+    width: 500px;
+    left: -13px;
+    background: url('app/assets/logos/kwl-horizontal-text.svg') white;
+    fill: orange;
+    background-position: 10% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 20px;
+    position: relative;
+    transition: all 2s ease in out;
+}
+
+.kw3-landing-logo.text.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kw3-trophy-title {
+    height: 25px;
+    width: 25px;
+    background: url('app/assets/img/kw3_white.png');
+}
+
+.kw3-landing-subtitle {
+    color: #333333;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: none;
+    left: 20px;
+    text-align: left;
+    position: absolute;
+}
+
+.kw3-feature-item .power-boys {
+    background: #f36969;
+}
+
+#changes-container {
+    padding: 20px 50px 40px;
+    background: #69b9f3;
+    overflow: hidden;
+}
+
+#changes-container h3 {
+    color: #ffffff;
+}
+
+#changes-container h2 {
+    color: #ffffff;
+    margin: 30px auto;
+}
+
+#changes-container h2:last-of-type {
+    margin-bottom: 50px;
+}
+
+#changes-container p {
+    font-family: "lato", sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 75%;
+    margin: 20px auto 30px;
+    line-height: 1.5;
+    max-width: 1500px;
+}
+
+#changes-container p:last-of-type {
+    margin-bottom: 40px;
+}
+
+#changes-container .list-container ol {
+    width: 250px;
+    margin: 50px auto 20px;
+    font-family: "lato", sans-serif;
+}
+
+#changes-container .list-container ol li {
+    position: relative;
+    color: #fff;
+    margin: 15px auto 25px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.kw3-feature-grid.award .feature-title-main {
+    text-align: center;
+    margin: 100px 0;
+    font-size: 42px;
+    color: #398ece;
+    font-weight: bold;
+}
+
+.kw3-feature-item.award {
+    height: 100%;
+}
+
+.kw3-feature-item.award .kw3-feature-image {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.kw3-feature-item.award .kw3-feature-image i {
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+    font-size: 100px;
+    color: #398ece;
+}
+
+.kw3-feature-banner.trophys {
+    padding-top: 25px;
+    background: #333333;
+    border: 0px;
+}
+
+.kw3-feature-banner.trophys .banner-item {
+    text-align: center;
+    font-size: 32px;
+}
+
+.kw3-feature-banner.trophys.x1 .banner-item {
+    width: 100%;
+}
+
+.kw3-feature-banner.trophys.x2 .banner-item {
+    width: 50%;
+}
+
+.kw3-feature-banner.trophys.x4 .banner-item {
+    width: 25%;
+}
+
+#footballTrophy {
+    position: absolute;
+    font-size: 28px;
+    color: #fff;
+    left: 63px;
+    top: 92px;
+}
+
+.kw3-feature-item.award .kw3-feature-title {
+    background: transparent;
+    line-height: 1.5;
+    font-size: 18px;
+    border-bottom: 5px solid;
+    padding: 5px 10px 15px;
+}
+
+.kw3-feature-item.award {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1500px) {
+    .kw3-feature-item {
+        height: 1280px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .kw3-feature-item {
+        height: 1050px;
+    }
+
+    .kw3-feature-item.short {
+        height: 1000px;
+    }
+
+    .kw3-feature-item.award .kw3-feature-title {
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .kw3-feature-item {
+        height: 100%;
+    }
+
+    .kw3-feature-item.short {
+        height: 100%;
+    }
+
+    .kw3-feature-grid.award .feature-title-main {
+        margin: 50px 0;
+    }
+
+    .kw3-nav li a {
+        font-size: 13px;
+    }
+
+    .kw3-feature-item {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kw3-landing {
+        height: 85vh;
+        min-height: 500px;
+    }
+
+    .kw3-landing-logo.tri {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
+        z-index: 100000000;
+        transition: all 0s;
+    }
+
+    .kw3-landing-logo.tri.stop {
+        
+    }
+
+    .kw3-landing-logo.text {
+        left: 0;
+        margin: 0 auto;
+        width: 300px;
+        height: 70px;
+    }
+
+    .kw3-landing-subtitle {
+        text-align: center;
+        position: relative;
+        margin: 10px auto;
+        left: 0;
+    }
+
+    .kw3-nav-title {
+        left: -10px;
+    }
+
+    .kw3-landing {
+        padding-bottom: 20px;
+    }
+
+    .kw3-landing-feature {
+        padding-top: 50px;
+    }
+
+    #changes-container p {
+        width: 100%;
+    }
+
+    .kw3-feature-grid.award .feature-title-main {
+        margin: 20px 0;
+    }
+
+    #vsButton {
+        padding: 7.5px;
+    }
+
+    .kw3-nav li a .mobile-icon.vs {
+        font-size: 13px;
+    }
+
+    .kw3-feature-item.award .kw3-feature-title {
+        line-height: 1.5;
+        padding-bottom: 0;
+    }
+
+    .kw3-feature-item.award p {
+        margin: 15px 0 10px;
+    }
+}
+</style>
+
+<body>
+    <script src="/app/js/jquery.min.js"></script>
+    <script src="/app/js/jquery-ui.min.js"></script>
+    <section>
+        <!--  <div class="kw3-nav">
+            <div class="kw3-nav-content">
+                <div class="kw3-nav-title" id="kw3-title"> <a></a></div>
+                <ul>
+                    <li><a id="awardsButton"><span class="nav-link"></span><i class="fas fa-award mobile-icon"></i></a><span class="notification"><i class="fas fa-circle"></i></span></li>
+                    <li><a id="rankingsButton"><span class="nav-link"></span><i class="fas fa-list-ol mobile-icon"></i></a></li>
+                    <li><a id="vsButton"><span class="nav-link"></span><span class="mobile-icon vs">vs</span></a></li>
+                    <li><a id="changesButton"><span class="nav-link"></span><i class="fas fa-book mobile-icon"></i></a> <span class="notification"><i class="fas fa-circle"></i></span> </li>
+                    <li><a id="recordsButton"><span class="nav-link"></span><i class="fas fa-trophy mobile-icon"></i></a> <span class="notification"><i class="fas fa-circle"></i></span> </li>
+                </ul>
+            </div>
+        </div>
+       <div id="contact-modal" class="kw3-contact">
+            <div class="kw3-form-container">
+                <form id="contact-form" action="mailto:akking@live.com" method="post" enctype="text/plain">
+                    <label for="name"> who are you? </label>
+                    <input type="text" name="name" id="name">
+                    <label for="email"> email </label>
+                    <input type="text" name="email" id="email">
+                    <label for="subject"> whats up? </label>
+                    <input type="text" name="subject" id="subject">
+                    <label for="message">tell me more </label>
+                    <textarea type="text" form="contact-form" id="message"></textarea>
+                    <button type='submit' value="Send">send</button>
+                    <button type='reset' value="Reset">reset</button>
+                </form>
+            </div>
+        </div>
+        <div id="PP-modal" class="kw3-contact">
+            <p></p>
+        </div> -->
+        <a id="home"></a>
+        <div class="kw3-landing">
+            <div class="kw3-landing-feature">
+                <div class="kw3-landing-image">
+                    <div class="kw3-landing-logo tri"></div>
+                    <div class="kw3-landing-logo text"></div>
+                    <h2 class="kw3-landing-subtitle">Coming Soon<span id="dateMade"></span></h2>
+                    <p style="color: #2793e6 !important;text-align: center !important;"><span style="font-style:italic"></span><span style="font-style:italic"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="" style="color: white">
+            <h2 class='ECE-feature-subtitle' style="text-align:center;font-weight: normal;margin:0px;padding:6px;color:white;background-color: red;"> Learn how MELTDOWN and SPECTER affects you <span style="font-weight: bold;"> HERE. </span> </h2></a>
+        <div class="kw3-feature-container">
+            <a href="" id="awards"></a>
+            <div class="kw3-feature-grid award">
+                <h2 class="feature-title-main">League Awards</h2>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-trophy"></i><i id="footballTrophy" class="fas fa-football-ball"></i>
+                    </div>
+                    <h2 class="kw3-feature-title">kw3 Champion</h2>
+                    <p>Say yes to CosbyAssplay</p>
+                    <p style="font-weight: 200;font-style: italic;">Come eat his ass with a spoon</p>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-calendar-check" style="color: #ce5939"></i>
+                    </div>
+                    <h2 class="kw3-feature-title" style="color: #ce5939">Best Record</h2>
+                    <p>Jeff Hickman</p>
+                    <p style="font-weight: 200;font-style: italic;">11 - 3</p>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-bolt" style="color: #47ce39"></i>
+                    </div>
+                    <h2 class="kw3-feature-title" style="color: #47ce39">Points - Season</h2>
+                    <p>Jeff Hickman</p>
+                    <p style="font-weight: 200;font-style: italic;">1622</p>
+                </div>
+                <div class="kw3-feature-item award">
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-calendar" style="color: #39ceb4"></i>
+                    </div>
+                    <h2 class="kw3-feature-title" style="color: #39ceb4">Points - Single Game</h2>
+                    <p>Kim Jong Un's Homemade Cookie</p>
+                    <p style="font-weight: 200;font-style: italic;">188.5</p>
+                </div>
+            </div>
+        </div> -->
+        <!-- <a href="" id="rankings"></a>
+        <div class="kw3-feature-container">
+            <div class="kw3-feature-grid">
+                <div class="kw3-feature-item short">
+                    <div class="kw3-feature-item-content">
+                        <div class="kw3-ranking">
+                            <h2 class="ranking" style="color: #0b0a06;"></h2>
+                        </div>
+                        <div class="kw3-status cold">
+                            <span class="status"><i style="color:#f36969;" class="fas fa-sad-tear"></i></span>
+                        </div>
+                        <div class="kw3-feature-image active">
+                            <span class="kw3-date"> </span>
+                        </div>
+                        <h2 class="kw3-feature-title"></h2>
+                        <div class="kw3-feature-banner">
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="kw3-feature-banner trophys x1">
+                            <div class="banner-item">
+                                <i class="fas fa-calendar-check" style="color: #ce3992"></i>
+                                <p style="color: #ce3992"></p>
+                            </div>
+                        </div>
+                          <div class="power-boys">
+                            <h2 class="title">Piper's Power Catalysts of the Week<i class="fas fa-bolt"></i></h2>
+                            <p><span>Goff</span> - 34pts</p></span>
+                        </div> 
+                        <div class="kw3-feature-text">
+                            <p></p>
+                        </div>
+                        <div class="scroller">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="kw3-feature-item short">
+                    <div class="kw3-feature-item-content">
+                        <div class="kw3-ranking">
+                            <h2 class="ranking" style="color: #0b0a06;"></h2>
+                        </div>
+                        <div class="kw3-status cold">
+                            <span class="status"><i style="color:#f36969;" class="fas fa-sad-tear"></i></span>
+                        </div>
+                        <div class="kw3-feature-image active">
+                            <span class="kw3-date"> </span>
+                        </div>
+                        <h2 class="kw3-feature-title"></h2>
+                        <div class="kw3-feature-banner">
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="kw3-feature-banner trophys x1">
+                            <div class="banner-item">
+                                <i class="fas fa-calendar-check" style="color: #ce3992"></i>
+                                <p style="color: #ce3992"></p>
+                            </div>
+                        </div>
+                          <div class="power-boys">
+                            <h2 class="title">Piper's Power Catalysts of the Week<i class="fas fa-bolt"></i></h2>
+                            <p><span>Goff</span> - 34pts</p></span>
+                        </div> 
+                        <div class="kw3-feature-text">
+                            <p></p>
+                        </div>
+                        <div class="scroller">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="kw3-feature-item short">
+                    <div class="kw3-feature-item-content">
+                        <div class="kw3-ranking">
+                            <h2 class="ranking" style="color: #0b0a06;"></h2>
+                        </div>
+                        <div class="kw3-status cold">
+                            <span class="status"><i style="color:#f36969;" class="fas fa-sad-tear"></i></span>
+                        </div>
+                        <div class="kw3-feature-image active">
+                            <span class="kw3-date"> </span>
+                        </div>
+                        <h2 class="kw3-feature-title"></h2>
+                        <div class="kw3-feature-banner">
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                            <div class="banner-item">
+                                <span></span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="kw3-feature-banner trophys x1">
+                            <div class="banner-item">
+                                <i class="fas fa-calendar-check" style="color: #ce3992"></i>
+                                <p style="color: #ce3992"></p>
+                            </div>
+                        </div>
+                          <div class="power-boys">
+                            <h2 class="title">Piper's Power Catalysts of the Week<i class="fas fa-bolt"></i></h2>
+                            <p><span>Goff</span> - 34pts</p></span>
+                        </div> 
+                        <div class="kw3-feature-text">
+                            <p></p>
+                        </div>
+                        <div class="scroller">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--  <a id="featuredGame"></a>
+        <div style="display: block;clear:both;content:'';"></div>
+        <div style="background: #333;">
+            <div class="kw3-feature-container quote">
+                <div class="kw3-feature-block quote">
+                    <h3 class="kw3-feature-block-title quote" id="nameGame">Jeff Testest <span style="text-align:center;font-style: italic;font-size: 24px;font-weight: 200;">- Testest</span></h3>
+                    <h3 class="kw3-feature-title quote" style="margin-bottom: 5px;padding-bottom:10px;text-align:center;border-top: 0;padding-top: 5px;">Lorem Ipsum</h3>
+                    <a href="" id="changes"></a>
+                    <h4 class="kw3-feature-title" style="border-top:0px;color:#fff;margin-top:0px;text-align: left;font-style: italic;padding-top: 5px;font-size:16px;text-align:center;padding-bottom: 0;margin-bottom:0;background: transparent;">Loerafdafdsa fdsa fdsfasdfj iafds fidsjfasjf</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container blank" id="changes-container">
+            <div style="position: relative;text-align: center;">
+            </div>
+        </div>
+        <div class="container blank" id="record-container">
+        </div>-->
+    </section>
+    <section>
+        <!--     <footer>
+            <div class="kw3-footer">
+                <div class="kw3-container">
+                    <ul class="kw3-footer-links">
+                        <li>
+                            <h4></h4>
+                        </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </footer> -->
+        </div>
+    </section>
+</body>
+<script src="/app/js/jtest.js?v2"></script>
+<script type="text/javascript">
+$(document).on('ready', function() {
+    if ($('.kw3-landing-logo.text').css('width') === '300px') {
+        $('.kw3-landing-logo.tri').addClass('stop');
+        $('.kw3-landing-logo.text').addClass('active');
+        setTimeout(function() {
+            $('.kw3-landing-subtitle').fadeIn('slow');
+        }, 3000);
+    } else {
+        setTimeout(function() {
+            $('.kw3-landing-logo.tri').addClass('stop');
+            $('.kw3-landing-logo.text').addClass('active');
+            $('.kw3-landing-subtitle').fadeIn('slow');
+        }, 2000);
+    }
+})
+</script>
+
+</html>
