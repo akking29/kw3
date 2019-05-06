@@ -216,10 +216,6 @@ i.nav-extra {
     padding: 0 50px;
 }
 
-.kw3-feature-container.partners {
-    padding: 0 100px;
-}
-
 .kw3-container {
     position: relative;
 }
@@ -518,7 +514,7 @@ i.nav-extra {
 
 .float-wrapper {
     max-width: 1500px;
-    margin: 0 auto 100px;
+    margin: 100px auto 100px;
     transition: all .5s ease-in-out;
 }
 
@@ -687,7 +683,7 @@ footer {
 }
 
 .kw3-feature-container.it {
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 .kw3-feature-container.it .kw3-cta-button {
@@ -697,7 +693,6 @@ footer {
     text-transform: uppercase;
     width: auto;
     padding: 10px 15px;
-    margin-bottom: 100px;
 }
 
 .kw3-feature-container.partners .kw3-feature-title,
@@ -826,15 +821,72 @@ footer {
     position: static;
 }
 
+.kw3-feature-container.it .kw3-feature-container {
+    padding: 0 0 50px;
+}
+
+.kw3-feature-item.it h2 {
+    line-height: 1.4;
+}
+
 @media screen and (max-width: 1500px) {
     .kw3-nav.scrolled .kw3-nav-title {
         background-position: 5% 50%;
+    }
+
+    #nameGame,
+    .kw3-feature-item.it h2 {
+        font-size: 24px;
+    }
+
+    .kw3-feature-item.it .kw3-feature-image i {
+        font-size: 64px;
+    }
+
+    .kw3-feature-container.it h4 {
+        font-size: 18px;
+    }
+
+    #nameGameSub,
+    .kw3-feature-item-content p {
+        font-size: 16px;
+    }
+
+    .kw3-nav li a {
+        font-size: 13px;
+    }
+
+    .image-right-container img {
+        height: 400px;
+        width: 435px;
+    }
+
+    .kw3-feature-item.it {
+        min-height: 370px;
+    }
+
+    .kw3-feature-container.it {
+        padding-top: 100px;
+    }
+
+    .float-wrapper.tri {
+        margin-top: 100px;
+    }
+
+    .float-wrapper {
+        margin: 75px 0 0;
+    }
+    .kw3-nav li .kw3-nav-drawer {
+      width: 380px;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .kw3-landing {
         background-position: 25% 50%;
+    }
+    .kw3-nav li .kw3-nav-drawer {
+      width: 350px;
     }
 }
 
@@ -873,6 +925,19 @@ footer {
     .kw3-feature-container.partners {
         padding: 0 10px;
     }
+
+    .float-wrapper {
+        padding: 0 30px;
+        margin-top: 0px;
+    }
+
+    .kw3-feature-container.it {
+        padding: 100px 30px 0;
+    }
+
+    .kw3-feature-block.quote {
+        padding-right: 100px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -892,12 +957,21 @@ footer {
         margin: 50px 0;
     }
 
-    .kw3-nav li a {
-        font-size: 13px;
-    }
 
     .kw3-feature-item {
         margin: 20px 0;
+    }
+
+    .kw3-feature-container.it {
+        padding: 100px 0px 0;
+    }
+
+    .kw3-feature-container.it .kw3-feature-container {
+        padding: 0 40px 40px;
+    }
+
+    .kw3-feature-container.it .kw3-cta-button {
+        margin-bottom: 20px;
     }
 
     .float-wrapper.tri {
@@ -916,10 +990,6 @@ footer {
         font-size: 36px;
     }
 
-    #nameGameSub {
-        font-size: 16px;
-    }
-
     .kw3-nav li {
         margin: 7px 10px;
     }
@@ -935,9 +1005,44 @@ footer {
     .kw3-feature-container.partners {
         padding: 0 50px;
     }
+
+    .kw3-feature-container.quote {
+        width: 100%;
+    }
+
+    .image-right-container {
+        top: 40px;
+        width: 100%;
+    }
+
+    .image-right-container img {
+        height: 300px;
+        width: 315px;
+    }
+    footer ul {
+        min-width: 33%;
+        min-height: 200px;
+    }
+
+    footer ul.logo {
+        min-height: auto;
+    }
+
+    footer {
+        padding: 20px 30px 60px;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
+    .float-wrapper.tri {
+        margin-bottom: 100px;
+    }
+
+    .float-wrapper.tri .kw3-feature-container.quote {
+        margin-top: 60px;
+    }
+
     .float-wrapper.tri .image-right-container {
         width: 100%;
         height: 350px;
@@ -995,26 +1100,84 @@ footer {
     .kw3-feature-container.partners {
         padding: 0 20px;
     }
+
+    .kw3-feature-item.it {
+        height: 100%;
+        min-height: auto;
+    }
+
+    .kw3-feature-item.it .kw3-feature-image {
+        width: 100px;
+    }
+
+    .kw3-feature-item.it h2,
+    .kw3-feature-item-content .kw3-feature-text p {
+        text-align: center;
+    }
+    footer ul {
+        min-width: 35%;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
-  .kw3-nav.scrolled .kw3-nav-title{
-    background-position: 12% 50%;
-  }
-    .kw3-feature-item.award {
-      width: 100%;
+
+
+    .kw3-feature-block.quote {
+        padding-right: 0;
     }
+
+    .kw3-feature-container,
+    .float-wrapper,
+    .kw3-feature-container.partners {
+        padding: 0 20px;
+    }
+
+    .kw3-footer-links.location {
+        top: -130px;
+    }
+
+    .location-bubble {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .image-right-container {
+        height: 300px;
+    }
+
+    .kw3-feature-image .fa-comment-alt {
+        font-size: 120px !important;
+    }
+
+    .kw3-feature-container.price {
+        padding-top: 100px;
+    }
+
+    .kw3-nav.scrolled .kw3-nav-title {
+        background-position: 12% 50%;
+    }
+
+    .kw3-feature-image {
+        height: 140px;
+    }
+
+    .kw3-feature-item.partner .kw3-feature-item-content {
+        padding-bottom: 20px;
+    }
+
+    .kw3-feature-item.award {
+        width: 100%;
+    }
+
     .kw3-feature-item.partner .kw3-feature-item-content,
     .kw3-feature-item.it .kw3-feature-item-content {
         min-height: auto;
     }
-    .kw3-feature-item-content .kw3-feature-text p {
-      text-align: center;
-    }
 
-    .kw3-landing {
-        height: 85vh;
-        min-height: 500px;
+    .kw3-feature-item-content .kw3-feature-text p {
+        text-align: center;
     }
 
     .kw3-landing-logo.tri {
@@ -1046,14 +1209,15 @@ footer {
     }
 
     .kw3-landing {
-      min-height: 300px;
-      height: 50vh;
-      min-height: 50vh;
+        min-height: 300px;
+        height: 50vh;
+        min-height: 50vh;
         padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .kw3-feature-container {
-      padding-top: 0;
+        padding-top: 0;
     }
 
     .kw3-landing-feature {
@@ -1089,4 +1253,110 @@ footer {
         padding: 0 20px;
     }
 
+    .float-wrapper.tri .triangle,
+    .float-wrapper.tri .triangle2,
+    .float-wrapper.tri .triangle3 {
+        left: 50%;
+        margin-left: -175px;
+    }
+
+    .float-wrapper.tri .triangle2,
+    .float-wrapper.tri .triangle {
+        margin-left: 0;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle,
+    .float-wrapper.tri .image-right-container .triangle {
+        left: 00px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle2,
+    .float-wrapper.tri .image-right-container .triangle2 {
+        left: 00px;
+    }
+
+    .kw3-feature-container.it {
+      padding-top: 70px;
+    }
+    .kw3-feature-container.it .kw3-feature-container {
+      padding: 0 20px 40px;
+    }
+    .kw3-nav li .kw3-nav-drawer {
+      left: -70px;
+      display: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+  .kw3-footer-links.location {
+    top: -100px;
+    right: -10px;
+    min-width: auto;
+    min-height: auto;
+  }
+  .location-bubble {
+    height: 100px;
+    width: 100px;
+  }
+  .kw3-footer-links.location li {
+    font-size: 10px;
+  }
+  .kw3-footer-links.logo {
+    margin-bottom: 0px;
+  }
+  footer {
+    padding: 20px 15px 60px;
+  }
+  footer ul {
+    min-width: 100%;
+    margin: 10px 0;
+    min-height: auto;
+  }
+  .float-wrapper.tri {
+    margin-top: 10px
+  }
+
+.float-wrapper.tri .image-right-container {
+  height: 200px;
+}
+  .float-wrapper.tri .image-right-container .triangle {
+      height: 100px;
+      width: 100px;
+      left: 110px;
+  }
+
+  .float-wrapper.tri .image-right-container .triangle2 {
+      height: 150px;
+      width: 175px;
+      left: 120px;
+  }
+
+  .float-wrapper.tri .image-right-container .triangle3 {
+      height: 200px;
+      width: 220px;
+  }
+
+  .float-wrapper.tri:hover .image-right-container .triangle,
+  .float-wrapper.tri .image-right-container .triangle {
+      left: 100px;
+  }
+
+  .float-wrapper.tri:hover .image-right-container .triangle2,
+  .float-wrapper.tri .image-right-container .triangle2 {
+      left: 110px;
+  }
+
+  .float-wrapper.tri .triangle,
+  .float-wrapper.tri .triangle2,
+  .float-wrapper.tri .triangle3 {
+      left: 50%;
+      margin-left: -110px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .kw3-footer-links.location {
+    right: -10px;
+  }
 }

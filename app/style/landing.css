@@ -49,6 +49,9 @@ footer {
     padding: 0 0px 0px 50px;
     overflow: hidden;
     min-width: 200px; }
+    @media screen and (max-width: 1366px) {
+      footer ul {
+        min-width: 100px; } }
     @media screen and (max-width: 767px) {
       footer ul {
         padding: 0px 0 0 0px; } }
@@ -630,6 +633,8 @@ footer {
     padding: 50px 40px 25px;
     min-height: 300px;
     background: #ffffff; }
+    .kw3-feature-block-container.price {
+      padding: 50px 0 50px; }
   .kw3-feature-block-title {
     color: #2793e6; }
     .kw3-feature-block-title.hero {
@@ -708,7 +713,7 @@ footer {
     padding-bottom: 0; }
   .kw3-feature-container.partners {
     background: white;
-    padding: 0px 0 100px; }
+    padding: 0px 100px 100px; }
   .kw3-feature-container.learn {
     background: #f1f1f1;
     padding: 0px 0 100px; }
@@ -727,6 +732,8 @@ footer {
     @media screen and (max-width: 767px) {
       .kw3-feature-container.quote .fcf-feature-title {
         font-size: 14px !important; } }
+  .kw3-feature-container.price {
+    padding: 50px 0 100px; }
 
 .kw3-feature-grid {
   max-width: 1500px;
@@ -757,9 +764,7 @@ footer {
       width: 50%;
       float: left;
       padding-left: 2.08333%;
-      padding-right: 2.08333%;
-      overflow: hidden;
-      height: 850px; } }
+      padding-right: 2.08333%; } }
   @media screen and (max-width: 1024px) {
     .kw3-feature-item {
       -moz-box-sizing: border-box;
@@ -769,7 +774,6 @@ footer {
       float: left;
       padding-left: 2.08333%;
       padding-right: 2.08333%;
-      overflow: hidden;
       height: 100%; } }
   @media screen and (max-width: 768px) {
     .kw3-feature-item {

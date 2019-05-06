@@ -55,6 +55,9 @@ footer {
         padding: 0 0px 0px 50px;
         overflow: hidden;
         min-width: 200px;
+        @media screen and (max-width: 1366px){
+            min-width: 100px;
+        }
         @media screen and (max-width: 767px) {
             padding: 0px 0 0 0px;
         }
@@ -702,6 +705,9 @@ $susy: ( columns: 12, gutters: 4/4, gutter-position: inside);
                 padding: 50px 40px 25px;
                 min-height: 300px;
                 background: #ffffff;
+                &.price {
+                    padding: 50px 0 50px;
+                }
             }
             &-title {
                 color: $color-etc;
@@ -777,7 +783,7 @@ $susy: ( columns: 12, gutters: 4/4, gutter-position: inside);
             }
             &.partners {
                 background: white;
-                padding: 0px 0 100px;
+                padding: 0px 100px 100px;
             }
             &.learn {
                 background: #f1f1f1;
@@ -802,6 +808,9 @@ $susy: ( columns: 12, gutters: 4/4, gutter-position: inside);
                     }
                 }
             }
+            &.price {
+                padding: 50px 0 100px;
+            }
         }
         &-grid {
             max-width: 1500px;
@@ -820,12 +829,9 @@ $susy: ( columns: 12, gutters: 4/4, gutter-position: inside);
             height: auto;
             @media screen and (max-width: 1280px) {
                 @include span (6 of 12);
-                overflow: hidden;
-                height: 850px;
             }
             @media screen and (max-width: 1024px) {
                 @include span (12 of 12);
-                overflow: hidden;
                 height: 100%;
             }
             @media screen and (max-width: 768px) {
