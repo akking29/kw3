@@ -592,14 +592,12 @@ footer {
         cursor: pointer; }
 
 .kw3-feature-icons.row {
-  display: block;
-  display: none; }
+  display: block; }
   @media screen and (max-width: 767px) {
     .kw3-feature-icons.row {
       margin: 0 auto 20px;
       text-align: center;
-      width: 100%;
-      background: red; } }
+      width: 100%; } }
 
 .kw3-feature-button {
   width: 200px;
