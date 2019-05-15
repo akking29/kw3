@@ -75,6 +75,8 @@ footer li span i {
 .kw3-footer-links.logo img {
     border-bottom: 2px solid #333333;
     padding-bottom: 10px;
+    height: 20px;
+    width: auto;
 }
 
 .footer-link-title {
@@ -107,7 +109,7 @@ footer li span i {
     width: 250px;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #f1f1f1;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 p {
@@ -216,6 +218,12 @@ i.nav-extra {
     padding: 0 50px;
 }
 
+.float-wrapper::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
 .kw3-container {
     position: relative;
 }
@@ -287,7 +295,7 @@ i.nav-extra {
     background-image: url(/app/assets/img/background.jpg);
     background-size: cover;
     height: 600px;
-    min-height: 96vh;
+    min-height: 70vh;
     padding: 20px 0 50px;
     background-position: 50% 50%;
     margin-top: -50px;
@@ -324,7 +332,6 @@ i.nav-extra {
     position: absolute;
     height: 50px;
     width: 225px;
-    background: url('../assets/logos/kwl-horizontal-white.png');
     background-position: 10% 50%;
     background-size: cover;
     background-size: 100%;
@@ -831,7 +838,7 @@ footer {
 
 @media screen and (max-width: 1500px) {
     .kw3-nav.scrolled .kw3-nav-title {
-        background-position: 5% 50%;
+        background-position: 10% 50%;
     }
 
     #nameGame,
@@ -869,15 +876,12 @@ footer {
         padding-top: 100px;
     }
 
-    .float-wrapper.tri {
-        margin-top: 100px;
-    }
-
     .float-wrapper {
         margin: 75px 0 0;
     }
+
     .kw3-nav li .kw3-nav-drawer {
-      width: 380px;
+        width: 380px;
     }
 }
 
@@ -885,14 +889,15 @@ footer {
     .kw3-landing {
         background-position: 25% 50%;
     }
+
     .kw3-nav li .kw3-nav-drawer {
-      width: 350px;
+        width: 350px;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .kw3-nav.scrolled .kw3-nav-title {
-        background-position: 5% 50%;
+        background-position: 10% 50%;
     }
 
     .float-wrapper.tri .image-right-container {
@@ -941,6 +946,11 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+    .kw3-landing {
+        height: 60vh;
+        min-height: 500px;
+    }
+
     p {
         font-size: 16px !important;
     }
@@ -986,6 +996,14 @@ footer {
         left: -10px;
     }
 
+    .kw3-feature-item.partner .kw3-feature-item-content {
+        min-height: 370px;
+    }
+
+    .kw3-feature-item.it {
+        min-height: 370px;
+    }
+
     .kw3-feature-block-title.quote {
         font-size: 36px;
     }
@@ -1019,6 +1037,7 @@ footer {
         height: 300px;
         width: 315px;
     }
+
     footer ul {
         min-width: 33%;
         min-height: 200px;
@@ -1031,12 +1050,68 @@ footer {
     footer {
         padding: 20px 30px 60px;
     }
-    
+
+    .float-wrapper.tri {
+        padding: 0 70px;
+    }
+
+    .float-wrapper.tri .image-right-container {
+        width: 350px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .float-wrapper.tri .kw3-feature-block.quote {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    #nameGameSub,
+    #nameGame {
+        text-align: center;
+    }
+
+    #ucaasImg {
+        height: 320px;
+        width: 315px;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #ucaasImg img {
+        position: relative;
+        margin: 0 auto;
+        right: 0;
+    }
+
+    #ucaas button {
+        margin: 0 auto;
+    }
+
+    .kw3-feature-block.quote {
+        padding-right: 0;
+    }
+
+    .float-wrapper.tri .kw3-feature-block button {
+        margin: 40px auto 0;
+    }
+
+    .location-bubble {
+        height: 225px;
+        width: 225px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .kw3-landing {
+        height: 50vh;
+        min-height: 500px;
+    }
+
     .float-wrapper.tri {
         margin-bottom: 100px;
+        margin-top: 50px;
     }
 
     .float-wrapper.tri .kw3-feature-container.quote {
@@ -1082,6 +1157,10 @@ footer {
         padding-left: 0;
     }
 
+    .kw3-feature-container.it .kw3-feature-container {
+        padding-bottom: 20px;
+    }
+
     #nameGame,
     #nameGameSub {
         text-align: center;
@@ -1111,17 +1190,51 @@ footer {
     }
 
     .kw3-feature-item.it h2,
-    .kw3-feature-item-content .kw3-feature-text p {
+    .kw3-feature-item-content .kw3-feature-text p,
+    .kw3-feature-container.it .kw3-feature-title,
+    .kw3-feature-container.it h4 {
         text-align: center;
     }
+
+    .kw3-feature-container.it h4 {
+        margin: 20px auto 30px;
+    }
+
+    .kw3-feature-image .fa-comment-alt {
+        font-size: 120px !important;
+    }
+
+    .location-bubble {
+        height: 200px;
+        width: 200px;
+    }
+
+    footer {
+        padding: 20px 0px 60px;
+    }
+
     footer ul {
-        min-width: 35%;
+        min-width: 33%;
     }
 
 }
 
 @media screen and (max-width: 767px) {
+    .float-wrapper.tri .kw3-feature-block.quote {
+        padding-bottom: 20px;
+    }
 
+    .float-wrapper.tri .image-right-container {
+        height: 300px;
+    }
+
+    #nameGameSub {
+        margin: 20px auto 30px;
+    }
+
+    #nameGame {
+        margin-top: 20px;
+    }
 
     .kw3-feature-block.quote {
         padding-right: 0;
@@ -1143,8 +1256,21 @@ footer {
         margin: 0 auto;
     }
 
-    .image-right-container {
-        height: 300px;
+    #ucaas .image-right-container {
+        height: 270px;
+        width: 280px;
+        margin: 40px auto 20px;
+        float: none;
+    }
+
+    #ucaas .image-right-container img {
+        right: 0px;
+        width: 280px;
+        height: 270px;
+    }
+
+    #ucaas {
+        margin-bottom: 50px;
     }
 
     .kw3-feature-image .fa-comment-alt {
@@ -1153,6 +1279,7 @@ footer {
 
     .kw3-feature-container.price {
         padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     .kw3-nav.scrolled .kw3-nav-title {
@@ -1189,6 +1316,10 @@ footer {
     }
 
     .kw3-landing-logo.tri.stop {}
+
+    .kw3-feature-item.it h2 {
+        margin-top: 25px;
+    }
 
     .kw3-landing-logo.text {
         left: 0;
@@ -1251,6 +1382,7 @@ footer {
 
     .float-wrapper.tri {
         padding: 0 20px;
+        margin-bottom: 50px;
     }
 
     .float-wrapper.tri .triangle,
@@ -1276,87 +1408,117 @@ footer {
     }
 
     .kw3-feature-container.it {
-      padding-top: 70px;
+        padding-top: 70px;
     }
+
     .kw3-feature-container.it .kw3-feature-container {
-      padding: 0 20px 40px;
+        padding: 0 20px 20px;
     }
+
     .kw3-nav li .kw3-nav-drawer {
-      left: -70px;
-      display: none;
+        left: -70px;
+        display: none;
+    }
+
+    .kw3-feature-container.it .kw3-cta-button {
+        margin: 20px auto;
+    }
+
+    footer {
+        padding: 20px 30px 60px;
+    }
+
+    footer ul {
+        width: 35%;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
-  .kw3-footer-links.location {
-    top: -100px;
-    right: -10px;
-    min-width: auto;
-    min-height: auto;
-  }
-  .location-bubble {
-    height: 100px;
-    width: 100px;
-  }
-  .kw3-footer-links.location li {
-    font-size: 10px;
-  }
-  .kw3-footer-links.logo {
-    margin-bottom: 0px;
-  }
-  footer {
-    padding: 20px 15px 60px;
-  }
-  footer ul {
-    min-width: 100%;
-    margin: 10px 0;
-    min-height: auto;
-  }
-  .float-wrapper.tri {
-    margin-top: 10px
-  }
+    .kw3-footer-links.location {
+        top: -120px;
+        right: -10px;
+        min-width: auto;
+        min-height: auto;
+    }
 
-.float-wrapper.tri .image-right-container {
-  height: 200px;
+    .location-bubble {
+        height: 100px;
+        width: 100px;
+    }
+
+    .kw3-footer-links.location li {
+        font-size: 10px;
+    }
+
+    .kw3-footer-links.logo {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        padding: 20px 15px 60px;
+    }
+
+    footer ul {
+        min-width: 100%;
+        margin: 10px 0;
+        min-height: auto;
+    }
+
+    .float-wrapper.tri {
+        margin-top: 10px
+    }
+
+    .float-wrapper.tri .image-right-container {
+        height: 200px;
+    }
+
+    .float-wrapper.tri .image-right-container .triangle {
+        height: 100px;
+        width: 100px;
+        left: 110px;
+    }
+
+    .float-wrapper.tri .image-right-container .triangle2 {
+        height: 150px;
+        width: 175px;
+        left: 120px;
+    }
+
+    .float-wrapper.tri .image-right-container .triangle3 {
+        height: 200px;
+        width: 220px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle,
+    .float-wrapper.tri .image-right-container .triangle {
+        left: 100px;
+    }
+
+    .float-wrapper.tri:hover .image-right-container .triangle2,
+    .float-wrapper.tri .image-right-container .triangle2 {
+        left: 110px;
+    }
+
+    .float-wrapper.tri .triangle,
+    .float-wrapper.tri .triangle2,
+    .float-wrapper.tri .triangle3 {
+        left: 50%;
+        margin-left: -110px;
+    }
+
+    .kw3-feature-title {
+        font-size: 16px;
+        padding: 15px 0;
+    }
 }
-  .float-wrapper.tri .image-right-container .triangle {
-      height: 100px;
-      width: 100px;
-      left: 110px;
-  }
 
-  .float-wrapper.tri .image-right-container .triangle2 {
-      height: 150px;
-      width: 175px;
-      left: 120px;
-  }
+@media screen and (max-width: 360px) {
+    .kw3-footer-links.location {
+        right: -10px;
+    }
 
-  .float-wrapper.tri .image-right-container .triangle3 {
-      height: 200px;
-      width: 220px;
-  }
-
-  .float-wrapper.tri:hover .image-right-container .triangle,
-  .float-wrapper.tri .image-right-container .triangle {
-      left: 100px;
-  }
-
-  .float-wrapper.tri:hover .image-right-container .triangle2,
-  .float-wrapper.tri .image-right-container .triangle2 {
-      left: 110px;
-  }
-
-  .float-wrapper.tri .triangle,
-  .float-wrapper.tri .triangle2,
-  .float-wrapper.tri .triangle3 {
-      left: 50%;
-      margin-left: -110px;
-  }
-}
-
-@media screen and (max-width: 360px){
-  .kw3-footer-links.location {
-    right: -10px;
-  }
+    .kw3-footer-links.logo img {
+        height: 15px;
+    }
 }

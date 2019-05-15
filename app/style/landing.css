@@ -591,6 +591,14 @@ footer {
         border-color: #c9f1c9;
         cursor: pointer; }
 
+.kw3-feature-icons.row {
+  display: block; }
+  @media screen and (max-width: 767px) {
+    .kw3-feature-icons.row {
+      margin: 0 auto 20px;
+      text-align: center;
+      width: 100%; } }
+
 .kw3-feature-button {
   width: 200px;
   background: #ffffff;

@@ -93,19 +93,31 @@ $(document).ready(function() {
         });
     });
 
+    if ($('.location-bubble').css('height') === '150px' || $('.location-bubble').css('height') === '100px') {
+      $('#ucaasImg').prependTo('#ucaas');
+    } else {
+      $('#ucaasImg').appendTo('#ucaas');
+    }
+
     var width = $(window).width();
 
     var resizeId;
 
     $(window).resize(function() {
         clearTimeout(resizeId);
-        resizeId = setTimeout(doneResizing, 100);
+        resizeId = setTimeout(doneResizing, 10);
     });
 
     function doneResizing() {
         //if ($(this).width() != width){
 
         //}
+
+        if ($('.location-bubble').css('height') === '225px' || $('.location-bubble').css('height') === '150px' || $('.location-bubble').css('height') === '100px') {
+          $('#ucaasImg').prependTo('#ucaas');
+        } else {
+          $('#ucaasImg').appendTo('#ucaas');
+        }
     }
 
 });
