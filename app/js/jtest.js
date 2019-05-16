@@ -93,7 +93,7 @@ $(document).ready(function() {
         });
     });
 
-    if ($('.location-bubble').css('height') === '150px' || $('.location-bubble').css('height') === '100px') {
+    if ($('.location-bubble').css('height') === '225px' || $('.location-bubble').css('height') === '200px' || $('.location-bubble').css('height') === '125px' || $('.location-bubble').css('height') === '100px') {
       $('#ucaasImg').prependTo('#ucaas');
     } else {
       $('#ucaasImg').appendTo('#ucaas');
@@ -113,7 +113,7 @@ $(document).ready(function() {
 
         //}
 
-        if ($('.location-bubble').css('height') === '225px' || $('.location-bubble').css('height') === '150px' || $('.location-bubble').css('height') === '100px') {
+        if ($('.location-bubble').css('height') === '200px' || $('.location-bubble').css('height') === '225px' || $('.location-bubble').css('height') === '125px' || $('.location-bubble').css('height') === '100px') {
           $('#ucaasImg').prependTo('#ucaas');
         } else {
           $('#ucaasImg').appendTo('#ucaas');

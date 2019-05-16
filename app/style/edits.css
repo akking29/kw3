@@ -88,7 +88,7 @@ footer li span i {
 }
 
 .kw3-footer-links.location {
-    top: -170px;
+    top: -140px;
     right: 0px;
     position: absolute;
     overflow: visible;
@@ -421,20 +421,18 @@ i.nav-extra {
 
 .kw3-feature-item.award .kw3-feature-image {
     text-align: center;
-    height: 250px;
+    height: 130px;
     width: 100%;
     position: relative;
     margin: 0 auto;
-    background: #f15a24;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
 }
 
 .kw3-feature-item.award .kw3-feature-image i {
     position: relative;
     top: 50%;
-    margin-top: -50px;
-    font-size: 190px;
-    color: #ffffff;
+    margin-top: -60px;
+    font-size: 120px;
+    color: #f15a24;;
 }
 
 .kw3-feature-item.award p {
@@ -526,7 +524,7 @@ i.nav-extra {
 }
 
 .float-wrapper.tri {
-    margin: 50px auto 50px;
+    margin: 100px auto 100px;
 }
 
 .float-wrapper img {
@@ -864,6 +862,10 @@ footer .icon-row i {
   margin: 0 5px;
 }
 
+.kw3-nav ul {
+  margin-top: 7px;
+}
+
 @media screen and (max-width: 1500px) {
     .kw3-nav.scrolled .kw3-nav-title {
         background-position: 10% 50%;
@@ -912,6 +914,9 @@ footer .icon-row i {
     .kw3-nav li .kw3-nav-drawer {
         width: 380px;
     }
+    .float-wrapper.tri {
+      margin: 50px auto 0px;
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -922,15 +927,9 @@ footer .icon-row i {
     .kw3-nav li .kw3-nav-drawer {
         width: 350px;
     }
-}
-
-@media screen and (max-width: 1280px) {
-    .kw3-nav.scrolled .kw3-nav-title {
-        background-position: 10% 50%;
-    }
-
     .float-wrapper.tri .image-right-container {
         height: 400px;
+        right: -20px;
     }
 
     .float-wrapper.tri .triangle {
@@ -947,6 +946,23 @@ footer .icon-row i {
         height: 300px;
         width: 350px;
     }
+    .kw3-landing {
+      margin-top: -20px;
+    }
+    .kw3-feature-container.price {
+      padding: 100px 40px 100px;
+    }
+
+    .kw3-footer-links.location {
+      right: 20px;
+      top: -170px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .kw3-nav.scrolled .kw3-nav-title {
+        background-position: 10% 50%;
+    }
 
     .kw3-feature-container.quote {
         padding-top: 0px;
@@ -961,16 +977,19 @@ footer .icon-row i {
     }
 
     .float-wrapper {
-        padding: 20px 30px 50px;
+        padding: 50px 40px 50px;
         margin-top: 0px;
     }
 
     .kw3-feature-container.it {
-        padding: 100px 30px 0;
+        padding: 0px 40px 0;
     }
 
     .kw3-feature-block.quote {
         padding-right: 100px;
+    }
+    .kw3-feature-container.quote {
+      top: 90px;
     }
 }
 
@@ -1086,6 +1105,7 @@ footer .icon-row i {
 
     .float-wrapper.tri .image-right-container {
         width: 350px;
+        height: 340px;
         float: none;
         margin: 0 auto;
     }
@@ -1105,7 +1125,7 @@ footer .icon-row i {
         height: 320px;
         width: 315px;
         float: none;
-        margin: 0 auto 10px;
+        margin: 0 auto 20px;
     }
 
     #ucaasImg img {
@@ -1130,6 +1150,15 @@ footer .icon-row i {
         height: 225px;
         width: 225px;
     }
+    .kw3-feature-container.quote,
+    .image-right-container {
+      top: 0;
+    }
+    .float-wrapper {
+        padding: 50px 30px 50px;
+        margin-top: 0px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1140,11 +1169,7 @@ footer .icon-row i {
 
     .float-wrapper.tri {
         margin-bottom: 100px;
-        margin-top: 50px;
-    }
-
-    .float-wrapper.tri .kw3-feature-container.quote {
-        margin-top: 60px;
+        margin-top: 100px;
     }
 
     .kw3-feature-container.quote {
@@ -1178,6 +1203,9 @@ footer .icon-row i {
 
     .kw3-feature-container.partners {
         padding: 0 20px;
+    }
+    .kw3-feature-container.it {
+      padding-top: 70px;
     }
 
     .kw3-feature-item.it {
@@ -1215,6 +1243,10 @@ footer .icon-row i {
 
     footer ul {
         min-width: 33%;
+    }
+
+    .float-wrapper {
+        padding: 120px 30px 100px;
     }
 
 }
@@ -1279,6 +1311,7 @@ footer .icon-row i {
     }
 
     #ucaas {
+      margin-top: 50px;
         margin-bottom: 50px;
     }
 
