@@ -595,7 +595,7 @@ footer {
   display: block; }
   @media screen and (max-width: 767px) {
     .kw3-feature-icons.row {
-      margin: 0 auto 25px;
+      margin: 0 auto 10px;
       text-align: center;
       width: 100%; } }
 
@@ -741,7 +741,7 @@ footer {
       .kw3-feature-container.quote .fcf-feature-title {
         font-size: 14px !important; } }
   .kw3-feature-container.price {
-    padding: 50px 0 100px; }
+    padding: 100px 0 100px; }
 
 .kw3-feature-grid {
   max-width: 1500px;
@@ -1039,6 +1039,9 @@ footer {
     padding: 10px 10px;
     margin: 0 auto;
     background: transparent; }
+    @media screen and (max-width: 767px) {
+      .kw3-feature-title.price {
+        padding: 10px 10px 0; } }
 
 .kw3-feature-subtitle {
   margin: 5px 0 15px;

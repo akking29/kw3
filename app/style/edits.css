@@ -690,7 +690,7 @@ footer {
 }
 
 .kw3-feature-container.it {
-    padding-top: 150px;
+    padding-top: 70px;
 }
 
 .kw3-feature-container.it .kw3-cta-button {
@@ -753,14 +753,20 @@ footer {
 }
 
 .kw3-feature-container.it h4 {
-    line-height: 1.7;
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-weight: 200;
+    transition: display .2s ease-in-out;
+    font-family: "lato", sans-serif;
+    font-weight: 700;
     font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    margin: 0 auto;
 }
 
-.kw3-feature-container.it .kw3-feature-title {
+.kw3-feature-container.it h2 {
     text-align: left;
     background: #ffffff;
     padding-top: 15px;
@@ -836,13 +842,35 @@ footer {
     line-height: 1.4;
 }
 
+.kw3-feature-container.it h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+h2.price {
+  text-align: center;
+}
+
+.kw3-feature-container.it p {
+  line-height: 1.8;
+  color: #333333;
+  letter-spacing: 1px;
+}
+
+footer .icon-row i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
 @media screen and (max-width: 1500px) {
     .kw3-nav.scrolled .kw3-nav-title {
         background-position: 10% 50%;
     }
 
     #nameGame,
-    .kw3-feature-item.it h2 {
+    .kw3-feature-item.it h2,
+    h2.price {
         font-size: 24px;
     }
 
@@ -932,7 +960,7 @@ footer {
     }
 
     .float-wrapper {
-        padding: 0 30px;
+        padding: 20px 30px 50px;
         margin-top: 0px;
     }
 
@@ -973,7 +1001,7 @@ footer {
     }
 
     .kw3-feature-container.it {
-        padding: 100px 0px 0;
+        padding: 50px 0px 0;
     }
 
     .kw3-feature-container.it .kw3-feature-container {
@@ -1076,7 +1104,7 @@ footer {
         height: 320px;
         width: 315px;
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
 
     #ucaasImg img {
@@ -1116,35 +1144,6 @@ footer {
 
     .float-wrapper.tri .kw3-feature-container.quote {
         margin-top: 60px;
-    }
-
-    .float-wrapper.tri .image-right-container {
-        width: 100%;
-        height: 350px;
-        margin: 0 auto;
-        float: none;
-    }
-
-    .float-wrapper.tri .triangle,
-    .float-wrapper.tri .triangle2,
-    .float-wrapper.tri .triangle3 {
-        left: 50%;
-        margin-left: -175px;
-    }
-
-    .float-wrapper.tri .triangle2,
-    .float-wrapper.tri .triangle {
-        margin-left: 0;
-    }
-
-    .float-wrapper.tri:hover .image-right-container .triangle,
-    .float-wrapper.tri .image-right-container .triangle {
-        left: 60px;
-    }
-
-    .float-wrapper.tri:hover .image-right-container .triangle2,
-    .float-wrapper.tri .image-right-container .triangle2 {
-        left: 90px;
     }
 
     .kw3-feature-container.quote {
@@ -1197,7 +1196,7 @@ footer {
     }
 
     .kw3-feature-container.it h4 {
-        margin: 20px auto 30px;
+        margin: 20px auto 0px;
     }
 
     .kw3-feature-image .fa-comment-alt {
@@ -1220,8 +1219,13 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .kw3-nav ul {
+    margin-top: 4px;
+    background: #ffffff;
+  }
     .float-wrapper.tri .kw3-feature-block.quote {
         padding-bottom: 20px;
+        margin-top: 70px;
     }
 
     .float-wrapper.tri .image-right-container {
@@ -1229,11 +1233,11 @@ footer {
     }
 
     #nameGameSub {
-        margin: 20px auto 30px;
+        margin: 20px auto 20px;
     }
 
     #nameGame {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .kw3-feature-block.quote {
@@ -1246,13 +1250,17 @@ footer {
         padding: 0 20px;
     }
 
+    .kw3-feature-container.partners {
+        padding-top: 50px;
+    }
+
     .kw3-footer-links.location {
         top: -130px;
     }
 
     .location-bubble {
-        height: 150px;
-        width: 150px;
+        height: 125px;
+        width: 125px;
         margin: 0 auto;
     }
 
@@ -1278,8 +1286,8 @@ footer {
     }
 
     .kw3-feature-container.price {
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
     }
 
     .kw3-nav.scrolled .kw3-nav-title {
@@ -1321,6 +1329,10 @@ footer {
         margin-top: 25px;
     }
 
+    .kw3-feature-container.it h4 {
+      font-size: 16px;
+    }
+
     .kw3-landing-logo.text {
         left: 0;
         margin: 0 auto;
@@ -1345,6 +1357,8 @@ footer {
         min-height: 50vh;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        background-size: 300%;
+        background-position: 33%;
     }
 
     .kw3-feature-container {
@@ -1385,30 +1399,21 @@ footer {
         margin-bottom: 50px;
     }
 
-    .float-wrapper.tri .triangle,
-    .float-wrapper.tri .triangle2,
-    .float-wrapper.tri .triangle3 {
-        left: 50%;
-        margin-left: -175px;
-    }
-
-    .float-wrapper.tri .triangle2,
-    .float-wrapper.tri .triangle {
-        margin-left: 0;
-    }
-
-    .float-wrapper.tri:hover .image-right-container .triangle,
-    .float-wrapper.tri .image-right-container .triangle {
-        left: 00px;
-    }
-
-    .float-wrapper.tri:hover .image-right-container .triangle2,
-    .float-wrapper.tri .image-right-container .triangle2 {
-        left: 00px;
+    .float-wrapper.tri .kw3-feature-block button {
+        margin: 30px auto 0;
     }
 
     .kw3-feature-container.it {
-        padding-top: 70px;
+        padding-top: 50px;
+    }
+
+    .kw3-feature-container.it h2,
+    .kw3-feature-container.it p {
+      text-align: center;
+    }
+
+    .kw3-feature-container.it h2 {
+      font-size: 24px;
     }
 
     .kw3-feature-container.it .kw3-feature-container {
@@ -1422,6 +1427,10 @@ footer {
 
     .kw3-feature-container.it .kw3-cta-button {
         margin: 20px auto;
+    }
+
+    .kw3-footer-links.location li:first-of-type{
+      margin: 25px 0 30px;
     }
 
     footer {
@@ -1471,18 +1480,18 @@ footer {
 
     .float-wrapper.tri .image-right-container {
         height: 200px;
+        width: 220px;
     }
 
     .float-wrapper.tri .image-right-container .triangle {
         height: 100px;
         width: 100px;
-        left: 110px;
     }
 
     .float-wrapper.tri .image-right-container .triangle2 {
         height: 150px;
         width: 175px;
-        left: 120px;
+        left: -5px;
     }
 
     .float-wrapper.tri .image-right-container .triangle3 {
@@ -1490,26 +1499,18 @@ footer {
         width: 220px;
     }
 
-    .float-wrapper.tri:hover .image-right-container .triangle,
-    .float-wrapper.tri .image-right-container .triangle {
-        left: 100px;
-    }
-
-    .float-wrapper.tri:hover .image-right-container .triangle2,
-    .float-wrapper.tri .image-right-container .triangle2 {
-        left: 110px;
-    }
-
-    .float-wrapper.tri .triangle,
-    .float-wrapper.tri .triangle2,
-    .float-wrapper.tri .triangle3 {
-        left: 50%;
-        margin-left: -110px;
-    }
-
     .kw3-feature-title {
         font-size: 16px;
         padding: 15px 0;
+    }
+
+    .kw3-feature-container.it .kw3-feature-container {
+        padding: 0 25px 0;
+    }
+
+    footer ul.kw3-footer-links.location {
+      width: 45%;
+      right: -15px;
     }
 }
 
@@ -1520,5 +1521,23 @@ footer {
 
     .kw3-footer-links.logo img {
         height: 15px;
+    }
+
+    footer {
+      padding-top: 10px;
+    }
+
+    footer ul.kw3-footer-links.location {
+      width: 50%;
+    }
+
+    .kw3-feature-container.partners {
+      padding: 50px 10px 0;
+    }
+    .kw3-feature-container.it .kw3-feature-container {
+      padding: 0 15px 0;
+    }
+    .kw3-feature-text {
+      padding: 0 10px;
     }
 }
