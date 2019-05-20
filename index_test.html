@@ -34,8 +34,9 @@
                     <li><a id="changesButton" class="phoneCall"><span class="nav-link">Contact Us</span><i class="far fa-envelope mobile-icon"></i></a></li>
                     <li><a id="changesButton"><span class="nav-link">Our Team</span><i class="fas fa-users mobile-icon"></i></a></li>
                     <li class="drawer-link"><a id="rankingsButton" class="extra"><span class="nav-link">Services<i class="fas fa-chevron-down nav-extra"></i></span><i class="fas fa-shapes mobile-icon"></i></a>
-                        <div class="kw3-nav-drawer">
+                        <div id="drawer" class="kw3-nav-drawer">
                             <div class="content">
+                                <i class="fas fa-times close"></i>
                                 <ul>
                                     <li class="promo"><i class="fas fa-wifi"></i>Unified Communications as a Service</li>
                                     <li class="kw3-feature-item x2"><i class="fas fa-phone"></i>Contact Center as a Service</li>
@@ -43,7 +44,6 @@
                                     <li class="kw3-feature-item x2"><i class="fas fa-save"></i>Software as a Service</li>
                                     <li class="kw3-feature-item x2"><i class="fas fa-circle"></i>IT Asset Disposal</li>
                                 </ul>
-                                    <div style="display: block;clear: both;content: '';"></div>
                             </div>
                         </div>
                     </li>
@@ -80,13 +80,13 @@
     </div>
         <div class="kw3-feature-container">
             <a href="" id="awards"></a>
-            <h2 class="kw3-feature-title">build your communications platform with&nbsp;kingworks</h2>
-            <h3 class="kw3-feature-subtitle" style="text-align: center;font-size: 18px;line-height: 1.5;max-width:1024px;margin:0 auto 50px;">We offer a full suite of communication products to ensure your business uptime is always 100%. introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h3>
+            <h2 class="kw3-feature-title" id="leadTitle">build your communications with&nbsp;kingworks</h2>
+            <h3 class="kw3-feature-subtitle" id="leadSubtitle">We offer a full suite of communication products to ensure your business uptime is always 100%. introducing a whole new phone system to your company isn’t as scary as it sounds. It’s quick and easy to set up, so there’s no downtime for your business or expensive installation costs.</h3>
             <div class="kw3-feature-grid award">
                 <div class="kw3-feature-item award">
-                    <div class="triangle"></div>
-                    <div class="triangle2"></div>
-                    <div class="triangle3"></div>
+                    <div class="kw3-feature-image">
+                        <i class="fas fa-wifi" style="color: #333333;"></i>
+                    </div>
                     <h2 class="kw3-feature-title">UCAAS</h2>
                     <p>Unified Communications as a Service</p>
                     <p style="font-weight: 200;font-style: italic;">Emininate your maintenance costs while lowering setup expenses at the same time</p>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" style="color: #333333;"></i>
                     </div>
                     <h2 class="kw3-feature-title">CCAAS</h2>
                     <p>Contact Center as a Service</p>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-shield-alt" style="color: #333333;"></i>
                     </div>
                     <h2 class="kw3-feature-title">iSAAS</h2>
                     <p>IT Security as a Service</p>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fas fa-save"></i>
+                        <i class="fas fa-save" style="color: #333333";></i>
                     </div>
                     <h2 class="kw3-feature-title">SAAS</h2>
                     <p>Software as a Service</p>

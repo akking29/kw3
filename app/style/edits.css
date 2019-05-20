@@ -142,7 +142,7 @@ p {
     background: transparent;
     letter-spacing: 1px;
     font-weight: 500;
-    margin: 10px 0 20px;
+    margin: 10px 0 25px;
     text-transform: none;
     padding-left: 0px;
 }
@@ -295,7 +295,7 @@ i.nav-extra {
     background-image: url(/app/assets/img/background.jpg);
     background-size: cover;
     height: 600px;
-    min-height: 70vh;
+    min-height: 60vh;
     padding: 20px 0 50px;
     background-position: 50% 50%;
     margin-top: -50px;
@@ -432,7 +432,8 @@ i.nav-extra {
     top: 50%;
     margin-top: -60px;
     font-size: 120px;
-    color: #f15a24;;
+    color: #f15a24;
+    ;
 }
 
 .kw3-feature-item.award p {
@@ -688,7 +689,7 @@ footer {
 }
 
 .kw3-feature-container.it {
-    padding-top: 70px;
+    padding-top: 0px;
 }
 
 .kw3-feature-container.it .kw3-cta-button {
@@ -767,7 +768,7 @@ footer {
 .kw3-feature-container.it h2 {
     text-align: left;
     background: #ffffff;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 0;
     margin-bottom: 0px;
@@ -847,23 +848,74 @@ footer {
 }
 
 h2.price {
-  text-align: center;
+    text-align: center;
 }
 
 .kw3-feature-container.it p {
-  line-height: 1.8;
-  color: #333333;
-  letter-spacing: 1px;
-  font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 footer .icon-row i {
-  font-size: 20px;
-  margin: 0 5px;
+    font-size: 20px;
+    margin: 0 5px;
 }
 
 .kw3-nav ul {
-  margin-top: 7px;
+    margin-top: 7px;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.kw3-feature-item.award {
+    padding: 20px 10px 0;
+}
+
+.kw3-nav-drawer .content ul li {
+    list-style-type: none;
+}
+
+.kw3-nav-drawer .content ul::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.kw3-nav-drawer .content .close {
+    display: none;
+}
+
+.kw3-nav.scrolled ul {
+    padding: 0px;
+    margin-top: 4px;
+    background: transparent;
+}
+
+#drawer {
+    padding-top: 23px;
+}
+
+.kw3-nav li a {
+    border-bottom: 2px solid #ffffff;
+}
+
+.kw3-nav li.chat-button a {
+    border-bottom: 0px;
+}
+
+#leadTitle {
+    font-size: 22px;
+}
+
+#leadSubtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 1024px;
+    margin: 0 auto 50px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -875,6 +927,15 @@ footer .icon-row i {
     .kw3-feature-item.it h2,
     h2.price {
         font-size: 24px;
+    }
+
+    .kw3-landing {
+        background-position: 50% 40%;
+        background-size: 150%;
+        margin-top: -50px;
+        height: 500px;
+        height: 50vh;
+        min-height: 500px;
     }
 
     .kw3-feature-item.it .kw3-feature-image i {
@@ -914,22 +975,30 @@ footer .icon-row i {
     .kw3-nav li .kw3-nav-drawer {
         width: 380px;
     }
+
     .float-wrapper.tri {
-      margin: 50px auto 0px;
+        margin: 50px auto 0px;
     }
+
+    .kw3-feature-item.award {
+        width: 50%;
+        min-height: 400px;
+    }
+
 }
 
 @media screen and (max-width: 1366px) {
-    .kw3-landing {
-        background-position: 25% 50%;
+
+    .kw3-feature-container {
+      padding-top: 30px;
     }
 
     .kw3-nav li .kw3-nav-drawer {
         width: 350px;
     }
+
     .float-wrapper.tri .image-right-container {
         height: 400px;
-        right: -20px;
     }
 
     .float-wrapper.tri .triangle {
@@ -946,16 +1015,21 @@ footer .icon-row i {
         height: 300px;
         width: 350px;
     }
-    .kw3-landing {
-      margin-top: -20px;
-    }
+
     .kw3-feature-container.price {
-      padding: 100px 40px 100px;
+        padding: 100px 40px 100px;
     }
 
     .kw3-footer-links.location {
-      right: 20px;
-      top: -170px;
+        right: 20px;
+        top: -170px;
+    }
+    .kw3-feature-container.quote {
+      padding-top: 40px;
+    }
+    .kw3-feature-item.award p {
+      max-width: 340px;
+      margin: 10px auto;
     }
 }
 
@@ -988,8 +1062,9 @@ footer .icon-row i {
     .kw3-feature-block.quote {
         padding-right: 100px;
     }
+
     .kw3-feature-container.quote {
-      top: 90px;
+        top: 90px;
     }
 }
 
@@ -1058,10 +1133,6 @@ footer .icon-row i {
 
     .kw3-nav li {
         margin: 7px 10px;
-    }
-
-    .kw3-nav li .kw3-nav-drawer {
-        left: -30px;
     }
 
     .kw3-feature-item.award {
@@ -1138,6 +1209,10 @@ footer .icon-row i {
         margin: 0 auto;
     }
 
+    #leadSubtitle {
+      margin-bottom: 20px;
+    }
+
     .kw3-feature-block.quote {
         padding-right: 0;
     }
@@ -1150,13 +1225,19 @@ footer .icon-row i {
         height: 225px;
         width: 225px;
     }
+
     .kw3-feature-container.quote,
     .image-right-container {
-      top: 0;
+        top: 0;
     }
+
     .float-wrapper {
         padding: 50px 30px 50px;
         margin-top: 0px;
+    }
+
+    .kw3-landing {
+        background-size: 170%;
     }
 
 }
@@ -1204,8 +1285,9 @@ footer .icon-row i {
     .kw3-feature-container.partners {
         padding: 0 20px;
     }
+
     .kw3-feature-container.it {
-      padding-top: 70px;
+        padding-top: 70px;
     }
 
     .kw3-feature-item.it {
@@ -1252,13 +1334,89 @@ footer .icon-row i {
 }
 
 @media screen and (max-width: 767px) {
-  .kw3-nav ul {
-    margin-top: 4px;
-    background: #ffffff;
-  }
+    #leadSubtitle {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    #leadTitle {
+        font-size: 20px;
+    }
+
+    .kw3-nav.scrolled .kw3-nav-title {
+        background-size: 21%;
+        left: -3px;
+        width: 150px;
+    }
+
+
+    .float-wrapper.tri .image-right-container {
+        right: 0px;
+    }
+
+    .kw3-nav.scrolled.open {
+        box-shadow: 0 0 0 0;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .kw3-nav-banner {
+        height: auto;
+        transition: .5s ease-in-out;
+    }
+
+    .kw3-nav-banner.open {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .kw3-nav-drawer,
+    .kw3-nav-drawer .content {
+        height: 100%;
+        width: 100%;
+        z-index: 10000000;
+        position: fixed;
+        padding-top: 0;
+    }
+
+    .kw3-nav-drawer .content {
+        box-shadow: 0 0 0 0;
+        border: 0px;
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .kw3-nav-drawer .content .close {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .kw3-nav-drawer .content ul {
+        padding-top: 0;
+        margin-top: 0;
+        padding: 0px 15px;
+    }
+
+    .kw3-nav-drawer .content ul li {
+        padding: 0 20px;
+        font-size: 11px;
+    }
+
+    .kw3-nav-drawer.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .kw3-nav ul {
+        margin-top: 4px;
+        background: #ffffff;
+    }
+
     .float-wrapper.tri .kw3-feature-block.quote {
         padding-bottom: 20px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
 
     .float-wrapper.tri .image-right-container {
@@ -1266,7 +1424,7 @@ footer .icon-row i {
     }
 
     #nameGameSub {
-        margin: 20px auto 20px;
+        margin: 20px auto 30px;
     }
 
     #nameGame {
@@ -1300,7 +1458,7 @@ footer .icon-row i {
     #ucaas .image-right-container {
         height: 270px;
         width: 280px;
-        margin: 40px auto 20px;
+        margin: 40px auto 30px;
         float: none;
     }
 
@@ -1311,7 +1469,7 @@ footer .icon-row i {
     }
 
     #ucaas {
-      margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 50px;
     }
 
@@ -1364,7 +1522,7 @@ footer .icon-row i {
     }
 
     .kw3-feature-container.it h4 {
-      font-size: 16px;
+        font-size: 16px;
     }
 
     .kw3-landing-logo.text {
@@ -1383,6 +1541,7 @@ footer .icon-row i {
 
     .kw3-nav-title {
         left: -10px;
+        width: 150px;
     }
 
     .kw3-landing {
@@ -1392,7 +1551,8 @@ footer .icon-row i {
         padding-bottom: 20px;
         margin-bottom: 20px;
         background-size: 300%;
-        background-position: 33%;
+        background-position: 33% 40%;
+        margin-top: -50px;
     }
 
     .kw3-feature-container {
@@ -1443,11 +1603,22 @@ footer .icon-row i {
 
     .kw3-feature-container.it h2,
     .kw3-feature-container.it p {
-      text-align: center;
+        text-align: center;
     }
 
     .kw3-feature-container.it h2 {
-      font-size: 24px;
+        font-size: 24px;
+        padding-top: 15px;
+    }
+
+    .kw3-feature-container.it p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .kw3-feature-container.it .kw3-feature-text p {
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .kw3-feature-container.it .kw3-feature-container {
@@ -1463,8 +1634,12 @@ footer .icon-row i {
         margin: 20px auto;
     }
 
-    .kw3-footer-links.location li:first-of-type{
-      margin: 25px 0 30px;
+    .kw3-footer-links.location li:first-of-type {
+        margin: 25px 0 30px;
+    }
+
+    .kw3-feature-container.price {
+        padding: 50px 10px 50px;
     }
 
     footer {
@@ -1509,7 +1684,7 @@ footer .icon-row i {
     }
 
     .float-wrapper.tri {
-        margin-top: 10px
+        margin-top: 50px
     }
 
     .float-wrapper.tri .image-right-container {
@@ -1543,8 +1718,13 @@ footer .icon-row i {
     }
 
     footer ul.kw3-footer-links.location {
-      width: 45%;
-      right: -15px;
+        width: 45%;
+        right: -15px;
+    }
+
+    .kw3-landing {
+        height: 40vh;
+        min-height: 40vh;
     }
 }
 
@@ -1558,20 +1738,26 @@ footer .icon-row i {
     }
 
     footer {
-      padding-top: 10px;
+        padding-top: 10px;
     }
 
     footer ul.kw3-footer-links.location {
-      width: 50%;
+        width: 50%;
     }
 
     .kw3-feature-container.partners {
-      padding: 50px 10px 0;
+        padding: 50px 10px 0;
     }
+
     .kw3-feature-container.it .kw3-feature-container {
-      padding: 0 15px 0;
+        padding: 0 15px 0;
     }
+
     .kw3-feature-text {
-      padding: 0 10px;
+        padding: 0 10px;
+    }
+
+    .kw3-nav-drawer .content ul li {
+        padding: 0 10px;
     }
 }

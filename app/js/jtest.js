@@ -69,9 +69,20 @@ $(document).ready(function() {
         document.location.href = "#home";
     });
 
-    $("#rankingsButton").click(function() {
-        document.location.href = "#rankings";
-    });
+    $('.drawer-link').on('click',function(){
+        console.log('click');
+        $('#drawer').addClass('active');
+        $('.kw3-nav-banner').addClass('open');
+        $('.kw3-nav').addClass('open');
+    })
+
+    $('.close').on('click',function(){
+        console.log('click');
+        $('#drawer').removeClass('active');
+        $('.kw3-nav-banner').removeClass('open');
+        $('.kw3-nav').removeClass('open');
+    })
+
 
     $("#recordsButton").click(function() {
         document.location.href = "#leagueRecords";
@@ -97,6 +108,13 @@ $(document).ready(function() {
       $('#ucaasImg').prependTo('#ucaas');
     } else {
       $('#ucaasImg').appendTo('#ucaas');
+    }
+
+    if ($('#ucaasImg').css('height') === '270px'){
+      console.log('height');
+      $('#drawer').prependTo('body');
+    } else {
+
     }
 
     var width = $(window).width();
