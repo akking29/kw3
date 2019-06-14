@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name=”description” content="A communications company">
+    <meta property=”og:title” content="KingWorks 3" />
+    <meta name="theme-color" content="#f15a24">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2793e6">
+    <title>KingWorks 3 | Communications</title>
+    <link rel="icon" href="kw3_big.ico">
+    <link rel="icon" href="app/assets/logos/kwl-tri-orange.png">
+    <link rel="stylesheet" href="/app/style/landing.css">
+    <link rel="stylesheet" href="/app/style/edits.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Questrial" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/0375340a1b.js"></script>
+</head>
+
+<body>
+    <script src="/app/js/jquery.min.js"></script>
+    <script src="/app/js/jquery-ui.min.js"></script>
+    <div class="kw3-nav-banner">
+        <h3><span><i class="fas fa-phone"></i></span>set up an appointment now!</h3>
+    </div>
+    <div class="kw3-nav wrapper">
+        <div class="kw3-nav">
+            <div class="kw3-nav-content">
+                <a href="/index_test.html">
+                    <div class="kw3-nav-title always" id="kw3-title"></div>
+                </a>
+                <ul>
+                    <li class="chat-button"><a id="changesButton"><span class="nav-link">Get Started</span><i class="fas fa-comment-alt mobile-icon"></i></a></li>
+                    <li><a id="changesButton" class="phoneCall"><span class="nav-link">Contact Us</span><i class="far fa-envelope mobile-icon"></i></a></li>
+                    <li><a href="/team.html"><span class="nav-link">Our Team</span><i class="fas fa-users mobile-icon"></i></a></li>
+                    <li class="drawer-link"><a id="rankingsButton" class="extra"><span class="nav-link">Services<i class="fas fa-chevron-down nav-extra"></i></span><i class="fas fa-shapes mobile-icon"></i></a>
+                        <div id="drawer" class="kw3-nav-drawer">
+                            <div class="content">
+                                <i class="fas fa-times close"></i>
+                                <ul>
+                                    <li class="promo"><a target="_blank" href="/app/assets/img/UCaaS.pdf"><i class="fas fa-wifi"></i>Unified Communications as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fas fa-phone"></i>Contact Center as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fas fa-shield-alt"></i>IT Security as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fas fa-save"></i>Software as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href=""><i class="fas fa-circle"></i>IT Asset Disposal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contact-modal" class="kw3-contact">
+        <div class="kw3-form-container">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <form id="contact-form" action="mailto:akking@live.com" method="post" enctype="text/plain">
+                <label for="name"> Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="subject">Date & Time:</label>
+                <input type="text" name="subject" id="subject">
+                <button type='submit' value="Send">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="PP-modal" class="kw3-contact">
+        <p></p>
+    </div>
+    <div class="kw3-feature-container team">
+        <div class="kw3-feature-header team">
+            <h3 class="kw3-feature-title team" style="color: #333333;text-align: left;">Our Team</h3>
+            <p class="kw3-feature-subtitle team" style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>    
+        <div class="kw3-feature-item team">
+            <div class="kw3-feature-item-content team">
+
+                <div id="circle-orbit-container">
+
+                  <!-- Circles closest to the central point -->
+                  <div id="inner-orbit">
+                    <div class="inner-orbit-cirlces"><i class="fal fa-golf-club" id="dennyIcon1"></i></div>
+                  </div>
+
+                  <!-- Circles second closest to the central point -->
+                  <div id="middle-orbit">
+                    <div class="middle-orbit-cirlces"><i class="fal fa-hat-chef" id="dennyIcon2"></i></div>
+                  </div>
+
+                  <!-- Circles furthest away to the central point -->
+                  <div id="outer-orbit">
+                    <div class="outer-orbit-cirlces"><i class="fal fa-suitcase" id="dennyIcon3"></i></div>
+                  </div>
+
+                </div>
+                <div class="kw3-feature-image">
+                    <img id="dennyTeam" src="app/assets/img/denny.jpg" />
+                </div>
+                <div class="kw3-feature-text">
+                    <h3>Denny</h3>
+                    <p>Founder, Sales Director</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item team">
+            <div class="kw3-feature-item-content team">
+                <div id="circle-orbit-container">
+
+                  <!-- Circles closest to the central point -->
+                  <div id="inner-orbit">
+                    <div class="inner-orbit-cirlces"><i class="fal fa-book" id="emiliaIcon1"></i></div>
+                  </div>
+
+                  <!-- Circles second closest to the central point -->
+                  <div id="middle-orbit">
+                    <div class="middle-orbit-cirlces"><i class="fal fa-umbrella-beach" id="emiliaIcon2"></i></div>
+                  </div>
+
+                  <!-- Circles furthest away to the central point -->
+                  <div id="outer-orbit">
+                    <div class="outer-orbit-cirlces"><i class="fal fa-passport" id="emiliaIcon3"></i></div>
+                  </div>
+
+                </div>
+                <div class="kw3-feature-image">
+                    <img id="emiliaTeam" src="app/assets/img/emilia.jpg" />
+                </div>
+                <div class="kw3-feature-text">
+                    <h3>Emilia</h3>
+                    <p>System Administrator</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item team">
+            <div class="kw3-feature-item-content team">
+                <div id="circle-orbit-container">
+
+                  <!-- Circles closest to the central point -->
+                  <div id="inner-orbit">
+                    <div class="inner-orbit-cirlces"><i class="fal fa-guitar" id="adamIcon1"></i></div>
+                  </div>
+
+                  <!-- Circles second closest to the central point -->
+                  <div id="middle-orbit">
+                    <div class="middle-orbit-cirlces"><i class="fal fa-gamepad" id="adamIcon2"></i></div>
+                  </div>
+
+                  <!-- Circles furthest away to the central point -->
+                  <div id="outer-orbit">
+                    <div class="outer-orbit-cirlces"><i class="fal fa-beer" id="adamIcon3"></i></div>
+                  </div>
+
+                </div>
+                <div class="kw3-feature-image">
+                    <img id="adamTeam" src="app/assets/img/adam.jpg" />
+                </div>
+                <div class="kw3-feature-text">
+                    <h3>Adam</h3>
+                    <p>Creative Director, Developer</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="kw3-feature-container price">
+            <div class="kw3-feature-item price">
+                <div class="kw3-feature-item-content">
+                    <div class="kw3-feature-image" style="color:#f15a24;text-align: center;">
+                        <i class="far fa-comment-alt" style="font-size: 170px"></i>
+                    </div>
+                    <h2 class="price" style="color: #333333;">Get in touch with us!</h2>
+                    <div class="kw3-feature-text">
+                        <p style="text-align: center;">We're available by phone Monday-Friday 9-5 or feel free to leave us a message anytime!</p>
+                    </div>
+                    <div class="kw3-feature-container small">
+                        <div class="kw3-feature-item icon x2">
+                            <i title="chat now" class="fas fa-comment-alt active"></i>
+                            <p class="icon-on">Denny's available!</p>
+                        </div>
+                        <div class="kw3-feature-item icon x2">
+                            <i title="schedule a call" class="fas fa-phone phoneCall"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="kw3-footer">
+            <div class="kw3-container">
+                <ul class="kw3-footer-links logo" style="float: none;">
+                    <li>
+                        <img src="app/assets/logos/kwl-horizontal-black.png"/>
+                    </li>
+                </ul>
+                <ul class="kw3-footer-links location" style="float: right;">
+                    <li>
+                        <div class="location-bubble"></div>
+                    </li>
+                    <li style="text-align: center;">Located in San Diego</li>
+                    <li style="text-align: center;">
+                        <div class="icon-row">
+                            <i class="fab fa-facebook"></i><i class="fab fa-linkedin"></i><i class="fab fa-instagram"></i>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">services</li>
+                    <li><a>uCaaS</a></li>
+                    <li><a>cCaaS</a></li>
+                    <li><a>SaaS</a></li>
+                    <li><a>IT Disposal</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">our partners</li>
+                    <li><a>Effortless</a></li>
+                    <li><a>Ring Central</a></li>
+                    <li><a>Windstream</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">about</li>
+                    <li><a>Our Team</a></li>
+                    <li><a>Location</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">contact</li>
+                    <li><a>Chat with us now</a></li>
+                    <li class="phoneCall"><a>Schedule a call</a></li>
+                    <li><a>Email us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10987887;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10987887/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
+</body>
+<script src="/app/js/jtest.js?v2"></script>
+<script type="text/javascript">
+$(document).on('ready', function() {
+    if ($('.kw3-landing-logo.text').css('width') === '300px') {
+        $('.kw3-landing-logo.tri').addClass('stop');
+        $('.kw3-landing-logo.text').addClass('active');
+        setTimeout(function() {
+            $('.kw3-landing-subtitle').fadeIn('slow');
+            $('#landingSub').fadeIn('slow');
+        }, 3000);
+    } else {
+        setTimeout(function() {
+            $('.kw3-landing-logo.tri').addClass('stop');
+            $('.kw3-landing-logo.text').addClass('active');
+            $('.kw3-landing-subtitle').fadeIn('slow');
+            $('#landingSub').fadeIn('slow');
+        }, 00);
+    }
+
+    function openContact () {
+        $('#contact-modal').fadeIn();
+        $('.kw3-nav-banner').css('visibility', 'invisible');
+        $('.kw3-nav').addClass('modal');
+        $('.phoneCall').css('pointer-events','none');
+    }
+
+    function closeContact () {
+        $('#contact-modal').fadeOut();
+        $('.kw3-nav-banner').css('visibility', 'visible');
+        $('.kw3-nav').removeClass('modal');
+        $('.phoneCall').css('pointer-events','all');
+    }
+
+    $('.phoneCall').on('click',function(){
+        console.log('click');
+        openContact();
+    })
+
+    $('.close').on('click', function(){
+        closeContact();
+    })
+})
+</script>
+
+</html>
