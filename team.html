@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/app/style/edits.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400|Questrial" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0375340a1b.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,9 @@
     <div class="kw3-nav wrapper">
         <div class="kw3-nav">
             <div class="kw3-nav-content">
-                <div class="kw3-nav-title" id="kw3-title"><a></a></div>
+                <a href="/index_test.html">
+                    <div class="kw3-nav-title always" id="kw3-title"></div>
+                </a>
                 <ul>
                     <li class="chat-button"><a id="changesButton"><span class="nav-link">Get Started</span><i class="fas fa-comment-alt mobile-icon"></i></a></li>
                     <li><a id="changesButton" class="phoneCall"><span class="nav-link">Contact Us</span><i class="far fa-envelope mobile-icon"></i></a></li>
@@ -38,11 +40,11 @@
                             <div class="content">
                                 <i class="fas fa-times close"></i>
                                 <ul>
-                                    <li class="promo"><i class="fas fa-wifi"></i>Unified Communications as a Service</li>
-                                    <li class="kw3-feature-item x2"><i class="fas fa-phone"></i>Contact Center as a Service</li>
-                                    <li class="kw3-feature-item x2"><i class="fas fa-shield-alt"></i>IT Security as a Service</li>
-                                    <li class="kw3-feature-item x2"><i class="fas fa-save"></i>Software as a Service</li>
-                                    <li class="kw3-feature-item x2"><i class="fas fa-circle"></i>IT Asset Disposal</li>
+                                    <li class="promo"><a target="_blank" href="/app/assets/img/UCaaS.pdf"><i class="fas fa-wifi"></i>Unified Communications as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fas fa-phone"></i>Contact Center as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fas fa-shield-alt"></i>IT Security as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fas fa-save"></i>Software as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href=""><i class="fas fa-circle"></i>IT Asset Disposal</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -71,25 +73,28 @@
         <p></p>
     </div>
     <div class="kw3-feature-container team">
-        <h3 class="kw3-feature-title" style="color: #333333;">Our Team</h3>
+        <div class="kw3-feature-header team">
+            <h3 class="kw3-feature-title team" style="color: #333333;text-align: left;">Our Team</h3>
+            <p class="kw3-feature-subtitle team" style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>    
         <div class="kw3-feature-item team">
-            <div class="kw3-feature-item-content">
+            <div class="kw3-feature-item-content team">
 
                 <div id="circle-orbit-container">
 
                   <!-- Circles closest to the central point -->
                   <div id="inner-orbit">
-                    <div class="inner-orbit-cirlces"></div>
+                    <div class="inner-orbit-cirlces"><i class="fal fa-golf-club" id="dennyIcon1"></i></div>
                   </div>
 
                   <!-- Circles second closest to the central point -->
                   <div id="middle-orbit">
-                    <div class="middle-orbit-cirlces"></div>
+                    <div class="middle-orbit-cirlces"><i class="fal fa-hat-chef" id="dennyIcon2"></i></div>
                   </div>
 
                   <!-- Circles furthest away to the central point -->
                   <div id="outer-orbit">
-                    <div class="outer-orbit-cirlces"></div>
+                    <div class="outer-orbit-cirlces"><i class="fal fa-suitcase" id="dennyIcon3"></i></div>
                   </div>
 
                 </div>
@@ -99,26 +104,27 @@
                 <div class="kw3-feature-text">
                     <h3>Denny</h3>
                     <p>Founder, Sales Director</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item team">
-            <div class="kw3-feature-item-content">
+            <div class="kw3-feature-item-content team">
                 <div id="circle-orbit-container">
 
                   <!-- Circles closest to the central point -->
                   <div id="inner-orbit">
-                    <div class="inner-orbit-cirlces"></div>
+                    <div class="inner-orbit-cirlces"><i class="fal fa-book" id="emiliaIcon1"></i></div>
                   </div>
 
                   <!-- Circles second closest to the central point -->
                   <div id="middle-orbit">
-                    <div class="middle-orbit-cirlces"></div>
+                    <div class="middle-orbit-cirlces"><i class="fal fa-umbrella-beach" id="emiliaIcon2"></i></div>
                   </div>
 
                   <!-- Circles furthest away to the central point -->
                   <div id="outer-orbit">
-                    <div class="outer-orbit-cirlces"></div>
+                    <div class="outer-orbit-cirlces"><i class="fal fa-passport" id="emiliaIcon3"></i></div>
                   </div>
 
                 </div>
@@ -128,26 +134,27 @@
                 <div class="kw3-feature-text">
                     <h3>Emilia</h3>
                     <p>System Administrator</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item team">
-            <div class="kw3-feature-item-content">
+            <div class="kw3-feature-item-content team">
                 <div id="circle-orbit-container">
 
                   <!-- Circles closest to the central point -->
                   <div id="inner-orbit">
-                    <div class="inner-orbit-cirlces"></div>
+                    <div class="inner-orbit-cirlces"><i class="fal fa-guitar" id="adamIcon1"></i></div>
                   </div>
 
                   <!-- Circles second closest to the central point -->
                   <div id="middle-orbit">
-                    <div class="middle-orbit-cirlces"></div>
+                    <div class="middle-orbit-cirlces"><i class="fal fa-gamepad" id="adamIcon2"></i></div>
                   </div>
 
                   <!-- Circles furthest away to the central point -->
                   <div id="outer-orbit">
-                    <div class="outer-orbit-cirlces"></div>
+                    <div class="outer-orbit-cirlces"><i class="fal fa-beer" id="adamIcon3"></i></div>
                   </div>
 
                 </div>
@@ -157,10 +164,33 @@
                 <div class="kw3-feature-text">
                     <h3>Adam</h3>
                     <p>Creative Director, Developer</p>
+                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
                 </div>
             </div>
         </div>
     </div>
+        <div class="kw3-feature-container price">
+            <div class="kw3-feature-item price">
+                <div class="kw3-feature-item-content">
+                    <div class="kw3-feature-image" style="color:#f15a24;text-align: center;">
+                        <i class="far fa-comment-alt" style="font-size: 170px"></i>
+                    </div>
+                    <h2 class="price" style="color: #333333;">Get in touch with us!</h2>
+                    <div class="kw3-feature-text">
+                        <p style="text-align: center;">We're available by phone Monday-Friday 9-5 or feel free to leave us a message anytime!</p>
+                    </div>
+                    <div class="kw3-feature-container small">
+                        <div class="kw3-feature-item icon x2">
+                            <i title="chat now" class="fas fa-comment-alt active"></i>
+                            <p class="icon-on">Denny's available!</p>
+                        </div>
+                        <div class="kw3-feature-item icon x2">
+                            <i title="schedule a call" class="fas fa-phone phoneCall"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <footer>
         <div class="kw3-footer">
             <div class="kw3-container">
@@ -184,21 +214,19 @@
                     <li class="footer-link-title">services</li>
                     <li><a>uCaaS</a></li>
                     <li><a>cCaaS</a></li>
-                    <li><a>iSaaS</a></li>
                     <li><a>SaaS</a></li>
                     <li><a>IT Disposal</a></li>
-                </ul>
-                <ul class="kw3-footer-links">
-                    <li class="footer-link-title">about</li>
-                    <li><a>Our Team</a></li>
-                    <li><a>Location</a></li>
-                    <li><a>General Pricing</a></li>
                 </ul>
                 <ul class="kw3-footer-links">
                     <li class="footer-link-title">our partners</li>
                     <li><a>Effortless</a></li>
                     <li><a>Ring Central</a></li>
                     <li><a>Windstream</a></li>
+                </ul>
+                <ul class="kw3-footer-links">
+                    <li class="footer-link-title">about</li>
+                    <li><a>Our Team</a></li>
+                    <li><a>Location</a></li>
                 </ul>
                 <ul class="kw3-footer-links">
                     <li class="footer-link-title">contact</li>
@@ -210,6 +238,22 @@
         </div>
     </footer>
     </div>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10987887;
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+<a href="https://www.livechatinc.com/chat-with/10987887/" rel="nofollow">Chat with us</a>,
+powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
 </body>
 <script src="/app/js/jtest.js?v2"></script>
 <script type="text/javascript">
