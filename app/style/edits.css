@@ -492,6 +492,28 @@ i.nav-extra {
     width: 25%;
 }
 
+.kw3-nav .kw3-nav-drawer li a {
+    transition: none;
+    border-color: transparent;
+}
+
+.kw3-feature-item.it.center,
+.kw3-feature-item.it.center h4,
+.kw3-feature-item.it.center p {
+    text-align: center;
+}
+
+
+.kw3-feature-item.it.software.center .kw3-feature-item-content {
+    min-height: auto;
+}
+
+.kw3-row {
+    background: #6eb7ec;
+    padding: 50px 0 30px;
+    color: #ffffff;
+}
+
 #footballTrophy {
     position: absolute;
     font-size: 28px;
@@ -512,6 +534,7 @@ i.nav-extra {
     border-radius: 2px;
     text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .kw3-cta-button:hover {
@@ -622,6 +645,23 @@ i.nav-extra {
 
 .float-wrapper:hover .image-right-container .triangle3 {
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+.kw3-feature-header .image-right-container .triangle {
+    left: -80px;
+}
+
+.kw3-feature-header .image-right-container .triangle2 {
+    left: -40px;
+}
+
+.kw3-feature-header .float-wrapper .image-right-container .triangle3 {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: auto;
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
@@ -798,16 +838,34 @@ i.nav-extra {
     font-size: 26px
 }
 
-.kw3-feature-title.team {
+.kw3-feature-title.team,
+.kw3-feature-title.software {
     padding: 0 0 20px 0;
     line-height: 1;
     margin-bottom: 0;
 }
 
-.kw3-feature-subtitle.team {
+.kw3-feature-title.software,
+.kw3-feature-subtitle.software {
+    text-align: center;
+    color: #333333;
+}
+
+.kw3-feature-subtitle.team,
+.kw3-feature-subtitle.software {
     margin-bottom: 100px;
     line-height: 1.5;
     font-size: 18px;
+}
+
+.kw3-feature-title.software {
+    margin-top: 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+.kw3-feature-subtitle.software {
+    margin-bottom: 50px;
 }
 
 .kw3-feature-item.team .kw3-feature-item-content {
@@ -950,6 +1008,10 @@ footer {
     padding-top: 0px;
 }
 
+.kw3-feature-container.build {
+    padding-top: 50px;
+}
+
 .kw3-feature-container.it .kw3-cta-button {
     border: 0px;
     border-radius: 2px;
@@ -1009,6 +1071,30 @@ footer {
     text-align: left;
 }
 
+.kw3-feature-item.it ul {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    max-width: 550px;
+    list-style-type: none;
+}
+
+.kw3-feature-item.it ul li {
+    font-family: 'lato', sans-serif;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 25px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.kw3-feature-item.it ul li i {
+    font-size: 26px;
+    position: absolute;
+    left: -25px;
+    padding-top: 5px;
+}
+
 .kw3-feature-container.it h4 {
     font-weight: 200;
     transition: display .2s ease-in-out;
@@ -1053,16 +1139,6 @@ footer {
 
 .kw3-feature-item.it .kw3-feature-item-content i {
     transition: .5s ease-in-out;
-}
-
-.kw3-feature-item.it .kw3-feature-item-content:hover {
-    box-shadow: 0 0 0px 5px #333333;
-    cursor: pointer;
-}
-
-.kw3-feature-item.it .kw3-feature-item-content:hover i {
-    color: #f15a24;
-    top: -10px;
 }
 
 .kw3-nav-banner {
@@ -1167,6 +1243,7 @@ footer .icon-row i {
 
 #leadTitle {
     font-size: 22px;
+    padding-bottom: 10px;
 }
 
 #leadSubtitle {
@@ -1181,7 +1258,53 @@ footer .icon-row i {
     padding: 0 50px;
 }
 
+.kw3-feature-header.software {
+    padding: 0 0;
+}
+
+.kw3-feature-header.software .float-wrapper.tri {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 60px;
+}
+
+.kw3-feature-header.software .float-wrapper.tri .image-right-container {
+    height: 400px;
+    float: none;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.kw3-feature-item.partner .fa-award {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 36px;
+}
+
+.kw3-nav-banner i {
+    position: absolute;
+    right: 230px;
+    color: #ffffff;
+}
+
+.kw3-nav-banner a {
+    color: #ffffff;
+}
+
+footer .icon-row a {
+    display: inline-block;
+}
+.kw3-nav.open {
+    background: #ffffff;
+}
 @media screen and (max-width: 1500px) {
+    .kw3-row {
+        padding: 50px 20px 30px;
+    }
+    .kw3-row .kw3-feature-container.it {
+        padding-top: 0;
+    }
     .kw3-feature-item.team .kw3-feature-item-content {
         padding: 0 50px;
     }
@@ -1215,10 +1338,6 @@ footer .icon-row i {
     #nameGameSub,
     .kw3-feature-item-content p {
         font-size: 16px;
-    }
-
-    .kw3-nav li a {
-        font-size: 13px;
     }
 
     .image-right-container img {
@@ -1259,6 +1378,17 @@ footer .icon-row i {
     #circle-orbit-container {
         margin-left: -210px;
         left: 50%;
+    }
+    .kw3-feature-header.software .float-wrapper.tri {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .kw3-feature-item.it.center {
+        min-height: auto;
+    }
+
+    .kw3-feature-title.software {
+        margin-top: 50px;
     }
 
 }
@@ -1309,6 +1439,13 @@ footer .icon-row i {
     }
     .kw3-feature-item.team .kw3-feature-item-content {
         padding: 0 20px;
+    }
+    .kw3-feature-header.software .float-wrapper.tri {
+        margin-bottom: 50px;
+    }
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container {
+        width: 350px;
+        height: 300px;
     }
 }
 
@@ -1399,7 +1536,7 @@ footer .icon-row i {
     }
 
     .kw3-feature-item.partner .kw3-feature-item-content {
-        min-height: 370px;
+        min-height: 430px;
     }
 
     .kw3-feature-item.it {
@@ -1523,10 +1660,15 @@ footer .icon-row i {
     .kw3-feature-item.award {
         min-height: 430px;
     }
-
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .kw3-nav li a {
+        font-size: 14px;
+    }
     .kw3-landing {
         height: 50vh;
         min-height: 500px;
@@ -1581,6 +1723,7 @@ footer .icon-row i {
 
     .kw3-feature-item.it .kw3-feature-image {
         width: 100px;
+        text-align: center;
     }
 
     .kw3-feature-item.it h2,
@@ -1622,6 +1765,33 @@ footer .icon-row i {
 }
 
 @media screen and (max-width: 767px) {
+    .kw3-footer-links.location {
+        right: -10px;
+    }
+    .kw3-feature-item.software.it .kw3-feature-image i {
+        padding:0;
+    }
+    .kw3-feature-header.software .float-wrapper.tri {
+        margin-bottom: 0;
+    }
+    .kw3-feature-title.software {
+        margin-top: 40px;
+    }
+    .kw3-row {
+        padding: 0px 0 0;
+    }
+    .kw3-row .kw3-feature-container.it {
+        padding: 20px;
+    }
+    .kw3-feature-item.it ul {
+        margin: 10px auto 0;
+        padding-left: 20px;
+        max-width: 300px;
+        list-style-type: none;
+    }
+    .kw3-feature-item.it ul li {
+        font-size: 13px;
+    }
     .kw3-nav-title.always { 
         background-position: 17% 80%;
         background-size: 20%;
@@ -1659,6 +1829,8 @@ footer .icon-row i {
     .kw3-nav-banner.open {
         visibility: hidden;
         opacity: 0;
+        padding:0;
+        height: 0;
     }
 
     .kw3-nav-drawer,
@@ -1917,11 +2089,6 @@ footer .icon-row i {
         padding: 0 20px 20px;
     }
 
-    .kw3-nav li .kw3-nav-drawer {
-        left: -70px;
-        display: none;
-    }
-
     .kw3-feature-container.it .kw3-cta-button {
         margin: 20px auto;
     }
@@ -2016,7 +2183,8 @@ footer .icon-row i {
         margin-top: 50px
     }
 
-    .float-wrapper.tri .image-right-container {
+    .float-wrapper.tri .image-right-container,
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container {
         height: 200px;
         width: 220px;
     }
@@ -2024,6 +2192,18 @@ footer .icon-row i {
     .float-wrapper.tri .image-right-container .triangle {
         height: 100px;
         width: 100px;
+    }
+
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container .triangle {
+        left: 0;
+    }
+
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container .triangle2 {
+        
+    }
+
+    .kw3-feature-header.software .float-wrapper.tri .image-right-container .triangle3 {
+        left: 0;
     }
 
     .float-wrapper.tri .image-right-container .triangle2 {
@@ -2054,6 +2234,16 @@ footer .icon-row i {
     .kw3-landing {
         height: 40vh;
         min-height: 40vh;
+    }
+
+    .kw3-feature-item.it ul {
+        max-width: 280px;
+    }
+    #leadTitle {
+        font-size: 16px;
+    }
+    .kw3-landing {
+        background-size: 325%;
     }
 }
 

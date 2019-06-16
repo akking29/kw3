@@ -110,7 +110,7 @@ $(document).ready(function() {
       $('#ucaasImg').appendTo('#ucaas');
     }
 
-    if ($('#ucaasImg').css('height') === '270px'){
+    if ($('.mobile-icon').css('display') === 'block'){
       console.log('height');
       $('#drawer').prependTo('body');
     } else {
