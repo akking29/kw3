@@ -2,6 +2,16 @@
 <html lang="en" ng-app="app">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128601582-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128601582-2');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <meta name=”description” content="A communications company">
@@ -9,7 +19,9 @@
     <meta name="theme-color" content="#f15a24">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#2793e6">
-    <title>KingWorks 3 | Communications</title>
+    <title>KingWorks3 | Our Team</title>
+    <meta name="description" content="KingWorks3 team page.">
+    <meta name="robots" content="index, follow" />
     <link rel="icon" href="kw3_big.ico">
     <link rel="icon" href="app/assets/logos/kwl-tri-orange.png">
     <link rel="stylesheet" href="/app/style/landing.css">
@@ -29,12 +41,12 @@
     <div class="kw3-nav wrapper">
         <div class="kw3-nav">
             <div class="kw3-nav-content">
-                <a href="/index.html">
+                <a href="/index_test.html">
                     <div class="kw3-nav-title always" id="kw3-title"></div>
                 </a>
                 <ul>
-                    <li data-id="fcc780819b" class="livechat_button chat-button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887"><span class="nav-link">Get Started</span></a></li>
-                    <li><a href="mailto:hello@kingworks3.com" class="phoneCall"><span class="nav-link">Contact Us</span><i class="fal fa-envelope mobile-icon"></i></a></li>
+                    <li id="chatTrig" data-id="fcc780819b" class="livechat_button chat-button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887"><span class="nav-link">Get Started</span></a></li>
+                    <li><a href="/team.html#contactUs" class="phoneCall"><span class="nav-link">Contact Us</span><i class="fal fa-envelope mobile-icon"></i></a></li>
                     <li><a href="/team.html"><span class="nav-link">Our Team</span><i class="fal fa-users mobile-icon"></i></a></li>
                     <li class="drawer-link"><a id="rankingsButton" class="extra"><span class="nav-link">Services<i class="fal fa-chevron-down nav-extra"></i></span><i class="fal fa-shapes mobile-icon"></i></a>
                         <div id="drawer" class="kw3-nav-drawer">
@@ -43,8 +55,8 @@
                                 <ul>
                                     <li class="promo"><a target="_blank" href="/app/assets/img/UCaaS.pdf"><i class="fal fa-wifi"></i>Unified Communications as a Service</a></li>
                                     <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fal fa-phone"></i>Contact Center as a Service</a></li>
-                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fal fa-save"></i>Software as a Service</a></li>
-                                    <li class="kw3-feature-item x2"><a href="/index.html#assetsDisposition"><i class="fal fa-circle"></i>IT assets disposition</a></li>
+                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fal fa-browser"></i>Software as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href="/index_test.html#assetsDisposition"><i class="fal fa-circle"></i>IT assets disposition</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,8 +68,10 @@
     <div class="kw3-feature-container team">
         <div class="kw3-feature-header team">
             <h3 class="kw3-feature-title team" style="color: #333333;text-align: left;">Our Team</h3>
-            <p class="kw3-feature-subtitle team" style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>    
+            <p class="kw3-feature-subtitle team">The KW3 team is composed of several types of skillsets. Our team has experience with UCaaS, CCaaS, Web Development, Project Management, and IT Admin. We are dedicated to assisting our valued customers through their digital transformation. We will always do our utmost to ensure that every customer’s expectation is met or exceeded by leveraging our processes, resources, and years of experience.</p>
+        </div>
+    </div>
+    <div class="kw3-feature-container team">    
         <div class="kw3-feature-item team">
             <div class="kw3-feature-item-content team">
 
@@ -80,12 +94,12 @@
 
                 </div>
                 <div class="kw3-feature-image">
-                    <img id="dennyTeam" src="app/assets/img/denny.jpg" />
+                    <img alt="Denny, Founder, KingWorks3" id="dennyTeam" src="app/assets/img/denny.jpg" />
                 </div>
                 <div class="kw3-feature-text">
                     <h3>Denny</h3>
-                    <p>Founder, Sales Director</p>
-                    <small>"I am a veteran of the Telecommunications industry with 30 plus years of experience. My experience includes Sales Engineering, Channel Sales, Direct Sales, and Sales Management. I love to build trusted relationships, solve complex business issues, and be straight forward with my clients and my teammates."</small>
+                    <h5>Founder, Sales Director</h5>
+                    <p>"I am a veteran of the Telecommunications industry with 30 plus years of experience. My experience includes Sales Engineering, Channel Sales, Direct Sales, and Sales Management. I excel at building trusted relationships and solving complex business issues. I pride myself on being straight forward and honest with my clients and my&nbsp;teammates."</p>
                 </div>
             </div>
         </div>
@@ -110,12 +124,12 @@
 
                 </div>
                 <div class="kw3-feature-image">
-                    <img id="emiliaTeam" src="app/assets/img/emilia.jpg" />
+                    <img alt="Emilia, System Admin, KingWorks3" id="emiliaTeam" src="app/assets/img/emilia.jpg" />
                 </div>
                 <div class="kw3-feature-text">
                     <h3>Emilia</h3>
-                    <p>System Administrator</p>
-                    <small style="color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                    <h5>System Administrator</h5>
+                    <p>"I am a Microsoft Certified SQL Server Administrator and web solutions architect, with experience in IT support, customer support, system administration, and web development. When I'm not behind a computer you can find me at the beach or getting a beer at one of the many breweries in San Diego."</p>
                 </div>
             </div>
         </div>
@@ -140,33 +154,72 @@
 
                 </div>
                 <div class="kw3-feature-image">
-                    <img id="adamTeam" src="app/assets/img/adam.jpg" />
+                    <img alt="Adam, Developer, KingWorks3" id="adamTeam" src="app/assets/img/adam.jpg" />
                 </div>
                 <div class="kw3-feature-text">
                     <h3>Adam</h3>
-                    <p>Creative Director, Developer</p>
-                    <small>"I have 10+ years of design & development experience along with a longstanding role in customer service. My team & I just wrapped up building a scholarships award application with the San Diego Padres & the U.S. Military. It was a challenging yet awesome project. For fun, I run my fantasy football league's website and am in the process of gathering our 8 years of data and creating a unique dashboard for each player. It will be cool." </small>
+                    <h5>Creative Director, Developer</h5>
+                    <p>"I have 10+ years of design & development experience along with a longstanding role in customer service. My team & I just wrapped up building a scholarships award application with the San Diego Padres & the U.S. Military. It was a challenging yet awesome&nbsp;project." </p>
+                    <a id="contactUs"></a>
                 </div>
             </div>
         </div>
     </div>
+<div class="kw3-row team">
+    <div class="kw3-feature-container it"  style="background: #6eb7ec;">
+        <h3 class="kw3-feature-title contact">Contact Us</h3>
+        <div class="kw3-feature-item contact">
+            <div class="kw3-feature-item-content" style="background: #6eb7ec;">
+                <div class="kw3-feature-image">
+                    <i class="fal fa-sun"></i>
+                </div>
+                <div class="kw3-feature-text" style="background: #6eb7ec;">
+                    <h4 style="color: #ffffff;">Located in San Diego</h4>
+                    <p style="background: #6eb7ec;color: #ffffff;">Our office is located in <a style="color:#ffffff;" href="https://goo.gl/maps/1nRDmJp3BK26cE4D6" target="_blank">Hillcrest, San Diego.</a> Let's grab a coffee at&nbsp;Heartwork!</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item contact">
+            <div class="kw3-feature-item-content" style="background: #6eb7ec;">
+                <div class="kw3-feature-image">
+                    <i class="fal fa-phone"></i>
+                </div>
+                <div class="kw3-feature-text" style="background: #6eb7ec;">
+                    <h4 style="color: #ffffff;">800 231 2313</h4>
+                    <p style="background: #6eb7ec;color: #ffffff;">Feel free to give us a call! We'd love to chat about your project or set up an appointment to&nbsp;meet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kw3-feature-item contact">
+            <div class="kw3-feature-item-content" style="background: #6eb7ec;">
+                <div class="kw3-feature-image">
+                    <i class="fal fa-envelope"></i>
+                </div>
+                <div class="kw3-feature-text" style="background: #6eb7ec;">
+                    <a href="mailto:hello@kingworks3.com"><h4 style="color: #ffffff;">hello@kingworks3.com</h4></a>
+                    <p style="background: #6eb7ec;color: #ffffff;">Email us whenever! We'll check out your message and respond within a business&nbsp;day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="kw3-feature-container price">
         <div class="kw3-feature-item price">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image" style="color:#f15a24;text-align: center;">
-                    <i class="far fa-comment-alt" style="font-size: 170px"></i>
+                    <i class="fal fa-comment-alt" style="font-size: 170px"></i>
                 </div>
                 <h2 class="price" style="color: #333333;">Get in touch with us!</h2>
                     <div class="kw3-feature-text">
-                        <p style="text-align: center;">Not finding what you're looking for or need some additional details on a service? Give us a call or message us! We're always available to discuss a solution & set up a time to meet. We're available by phone Monday-Friday 9-5 or feel free to leave us a message anytime!</p>
+                        <p style="text-align: center;">Not finding what you're looking for or need some additional details on a service? Give us a call or message us! We're always available to discuss a solution & set up a time to meet. We're available by phone Monday-Friday 9-5 or feel free to leave us a message&nbsp;anytime!</p>
                     </div>
                 <div class="kw3-feature-container small">
                     <div class="kw3-feature-item icon x2">
-                        <i title="chat now" class="fal fa-comment-alt active"></i>
+                        <div data-id="40de6fb219" class="livechat_button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887">chat</a></div>
                         <p class="icon-on">Chat Now!</p>
                     </div>
                     <div class="kw3-feature-item icon x2">
-                        <i title="schedule a call" class="fal fa-phone phoneCall"></i>
+                        <a href="/team.html#contactUs"><i title="schedule a call" class="fal fa-phone phoneCall"></i></a>
                     </div>
                 </div>
             </div>
@@ -182,7 +235,7 @@
                 </ul>
                 <ul class="kw3-footer-links location" style="float: right;">
                     <li>
-                        <div class="location-bubble"></div>
+                        <a href="https://goo.gl/maps/1nRDmJp3BK26cE4D6" target="_blank"><div class="location-bubble"></div></a>
                     </li>
                     <li style="text-align: center;">Located in San Diego</li>
                     <li style="text-align: center;">
@@ -200,12 +253,6 @@
                     <li><a href="/index.html#assetsDisposition">IT Assets Disposition</a></li>
                 </ul>
                 <ul class="kw3-footer-links">
-                    <li class="footer-link-title">our partners</li>
-                    <li><a target="_blank" href="https://effortlessoffice.com/">Effortless</a></li>
-                    <li><a target="_blank" href="https://www.ringcentral.com/">Ring Central</a></li>
-                    <li><a target="_blank" href="https://www.jive.com/">Jive</a></li>
-                </ul>
-                <ul class="kw3-footer-links">
                     <li class="footer-link-title">contact</li>
                     <li><div data-id="VVOIOaLDr2h" class="livechat_button"><a href="https://www.livechatinc.com/customer-service/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887">customer service software</a></div></li>
                     <li><a href="mailto:hello@kingworks3.com">Email us</a></li>
@@ -213,6 +260,7 @@
                 <ul class="kw3-footer-links">
                     <li class="footer-link-title">about</li>
                     <li><a href="/team.html">Our Team</a></li>
+                    <li><a href="/team.html#contactUs">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -238,6 +286,7 @@ powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow
 <script src="/app/js/jtest.js?v2"></script>
 <script type="text/javascript">
 $(document).on('ready', function() {
+
     if ($('.kw3-landing-logo.text').css('width') === '300px') {
         $('.kw3-landing-logo.tri').addClass('stop');
         $('.kw3-landing-logo.text').addClass('active');

@@ -36,8 +36,13 @@
     animation: bounce 2s infinite;
 }
 
-small {
+small,
+h5 {
     font-family: "lato", sans-serif;
+}
+
+a i {
+    color: #333333;
 }
 
 footer {
@@ -108,12 +113,24 @@ footer li span i {
 
 .location-bubble {
     background-image: url(/app/assets/img/map_home.png);
-    background-position: 50% 40%;
+    background-position: 25% 25%;
     height: 250px;
     width: 250px;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #f1f1f1;
     margin: 0 auto 20px;
+    transition: all .2s ease-in-out;
+}
+
+.location-bubble:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 5px #f15a24;
+}
+
+#customChat a {
+    font-size: 0;
+    color: transparent;
+    line-height: 0;
 }
 
 a {
@@ -228,6 +245,8 @@ i.nav-extra {
     padding-bottom: 175px;
     padding-top: 80px;
     padding: 80px 0 0px;
+    margin-bottom: 0px;
+    max-width: 1575px;
 }
 
 .kw3-feature-container,
@@ -522,6 +541,15 @@ i.nav-extra {
     top: 92px;
 }
 
+.kw3-feature-item.team h5 {
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 0;
+    margin:20px 0 15px;
+}
+
 .kw3-cta-button {
     margin: 20px 0;
     text-align: center;
@@ -672,7 +700,8 @@ i.nav-extra {
 #circle-orbit-container {
   position: absolute;
   top: 0;
-  left: 10px;
+    left: 50%;
+    margin-left: -208px;
   height: 300px;
   width: 300px;
 }
@@ -839,7 +868,8 @@ i.nav-extra {
 }
 
 .kw3-feature-title.team,
-.kw3-feature-title.software {
+.kw3-feature-title.software,
+.kw3-feature-title.contact {
     padding: 0 0 20px 0;
     line-height: 1;
     margin-bottom: 0;
@@ -858,6 +888,10 @@ i.nav-extra {
     font-size: 18px;
 }
 
+.kw3-feature-subtitle.team {
+    margin-bottom: 20px;
+}
+
 .kw3-feature-title.software {
     margin-top: 0;
     text-align: left;
@@ -866,6 +900,12 @@ i.nav-extra {
 
 .kw3-feature-subtitle.software {
     margin-bottom: 50px;
+}
+
+.kw3-feature-title.contact {
+    padding-bottom: 40px;
+    color: #ffffff;
+    text-align: left;
 }
 
 .kw3-feature-item.team .kw3-feature-item-content {
@@ -1192,6 +1232,13 @@ h2.price {
     font-size: 18px;
 }
 
+.livechat_button img {
+    height: 100px;
+    top: -10px;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+
 footer .icon-row i {
     font-size: 20px;
     margin: 0 5px;
@@ -1206,6 +1253,10 @@ footer .icon-row i {
 
 .kw3-feature-item.award {
     padding: 20px 10px 0;
+}
+
+.kw3-feature-item.icon .icon-on {
+    padding-top: 0;
 }
 
 .kw3-nav-drawer .content ul li {
@@ -1295,9 +1346,34 @@ footer .icon-row i {
 footer .icon-row a {
     display: inline-block;
 }
-.kw3-nav.open {
-    background: #ffffff;
+
+.kw3-nav-drawer .content ul li a {
+    color: #333333;
 }
+
+.kw3-feature-item.contact .kw3-feature-text h4,
+.kw3-feature-item.contact .kw3-feature-text p{
+    text-align: center;
+}
+
+.kw3-feature-item.contact .kw3-feature-text p {
+    padding-top: 10px;
+}
+
+.kw3-feature-item.contact .kw3-feature-image {
+    height: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kw3-feature-item.contact .kw3-feature-image i {
+    font-size: 60px;
+}
+
+.kw3-row.team {
+    margin-top: 80px;
+}
+
 @media screen and (max-width: 1500px) {
     .kw3-row {
         padding: 50px 20px 30px;
@@ -1373,11 +1449,6 @@ footer .icon-row a {
     .kw3-feature-item.team {
         width: 50%;
         margin: 50px 0; 
-    }
-
-    #circle-orbit-container {
-        margin-left: -210px;
-        left: 50%;
     }
     .kw3-feature-header.software .float-wrapper.tri {
         margin-bottom: 0px;
@@ -1663,11 +1734,19 @@ footer .icon-row a {
     .kw3-feature-header.software .float-wrapper.tri .image-right-container {
         height: 300px;
     }
+    .kw3-feature-item.team {
+        width: 100%;
+        margin: 50px 0; 
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .kw3-nav li a {
         font-size: 14px;
+    }
+    .kw3-nav-drawer .content ul li a {
+        font-size: 11px;
     }
     .kw3-landing {
         height: 50vh;
@@ -1765,6 +1844,21 @@ footer .icon-row a {
 }
 
 @media screen and (max-width: 767px) {
+    .kw3-feature-container.it .kw3-feature-item.contact h4 {
+        font-size: 14px;
+    }
+    .kw3-feature-subtitle.team {
+        margin-bottom: 0px;
+    }
+    .kw3-feature-container.team {
+        margin-bottom: 0px;
+    }
+    .kw3-row.team {
+        margin-top: 30px;
+    }
+.kw3-nav.open {
+    background: #ffffff;
+}
     .kw3-footer-links.location {
         right: -10px;
     }
@@ -1792,9 +1886,12 @@ footer .icon-row a {
     .kw3-feature-item.it ul li {
         font-size: 13px;
     }
+    .kw3-nav-title {
+        width: 50px;
+    }
     .kw3-nav-title.always { 
-        background-position: 17% 80%;
-        background-size: 20%;
+        background-position: 100% 80%;
+        background-size: 65%;
     }
     #leadSubtitle {
         font-size: 16px;
@@ -1806,9 +1903,9 @@ footer .icon-row a {
     }
 
     .kw3-nav.scrolled .kw3-nav-title {
-        background-size: 21%;
-        left: -3px;
-        width: 150px;
+        background-size: 65%;
+        left: 10px;
+        width: 50px;
     }
 
 
@@ -1917,6 +2014,7 @@ footer .icon-row a {
         height: 125px;
         width: 125px;
         margin: 0 auto;
+        background-position: 32% 33%;
     }
 
     #ucaas .image-right-container {
@@ -2001,11 +2099,6 @@ footer .icon-row a {
         position: relative;
         margin: 10px auto;
         left: 0;
-    }
-
-    .kw3-nav-title {
-        left: -10px;
-        width: 150px;
     }
 
     .kw3-landing {
@@ -2134,6 +2227,10 @@ footer .icon-row a {
         padding: 0 20px;
     }
 
+    .kw3-feature-item.team .kw3-feature-item-content {
+        padding: 0;
+    }
+
     .kw3-feature-item.team .kw3-feature-image {
         top: 0;
         margin-bottom: 0;
@@ -2143,6 +2240,10 @@ footer .icon-row a {
 
     #circle-orbit-container {
         display: none;
+    }
+
+    .kw3-nav-banner i {
+        right: 245px;
     }
 
 }
@@ -2170,7 +2271,7 @@ footer .icon-row a {
     }
 
     footer {
-        padding: 20px 15px 60px;
+        padding: 20px 15px 100px;
     }
 
     footer ul {

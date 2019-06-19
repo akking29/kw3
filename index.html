@@ -2,6 +2,16 @@
 <html lang="en" ng-app="app">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128601582-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128601582-2');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <meta name=”description” content="A communications company">
@@ -9,7 +19,9 @@
     <meta name="theme-color" content="#f15a24">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#2793e6">
-    <title>KingWorks 3 | Communications</title>
+    <title>KingWorks 3 | Accelerate Your Digital Transformation</title>
+    <meta name="description" content="Leveraging UCaaS, CcaS, and web development we can provide our customers with technology platforms that will impove sales, customer satisfaction, and drive efficiencies.">
+    <meta name="robots" content="index, follow" />
     <link rel="icon" href="kw3_big.ico">
     <link rel="icon" href="app/assets/logos/kwl-tri-orange.png">
     <link rel="stylesheet" href="/app/style/landing.css">
@@ -29,19 +41,19 @@
     <div class="kw3-nav wrapper">
         <div class="kw3-nav">
             <div class="kw3-nav-content">
-                <div class="kw3-nav-title" id="kw3-title"><a></a></div>
+                <div class="kw3-nav-title" id="kw3-title"></div>
                 <ul>
                     <li data-id="fcc780819b" class="livechat_button chat-button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887"><span class="nav-link">Get Started</span></a></li>
-                    <li><a href="mailto:hello@kingworks3.com" class="phoneCall"><span class="nav-link">Contact Us</span><i class="fal fa-envelope mobile-icon"></i></a></li>
+                    <li><a href="/team.html#contactUs" class="phoneCall"><span class="nav-link">Contact Us</span><i class="fal fa-envelope mobile-icon"></i></a></li>
                     <li><a href="/team.html"><span class="nav-link">Our Team</span><i class="fal fa-users mobile-icon"></i></a></li>
-                    <li class="drawer-link"><a id="rankingsButton" class="extra"><span class="nav-link">Services<i class="fal fa-chevron-down nav-extra"></i></span><i class="fal fa-shapes mobile-icon"></i></a>
+                    <li class="drawer-link"><a class="extra"><span class="nav-link">Services<i class="fal fa-chevron-down nav-extra"></i></span><i class="fal fa-shapes mobile-icon"></i></a>
                         <div id="drawer" class="kw3-nav-drawer">
                             <div class="content">
                                 <i class="fal fa-times close"></i>
                                 <ul>
                                     <li class="promo"><a target="_blank" href="/app/assets/img/UCaaS.pdf"><i class="fal fa-wifi"></i>Unified Communications as a Service</a></li>
                                     <li class="kw3-feature-item x2"><a target="_blank" href="/app/assets/img/CcaS.pdf"><i class="fal fa-phone"></i>Contact Center as a Service</a></li>
-                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fal fa-save"></i>Software as a Service</a></li>
+                                    <li class="kw3-feature-item x2"><a href="/software.html"><i class="fal fa-browser"></i>Software as a Service</a></li>
                                     <li class="kw3-feature-item x2"><a href="#assetsDisposition"><i class="fal fa-circle"></i>IT assets disposition</a></li>
                                 </ul>
                             </div>
@@ -62,20 +74,20 @@
         <div class="kw3-feature-container">
             <a href="" id="awards"></a>
             <h2 class="kw3-feature-title" id="leadTitle">build your kingworks3 communications cloud</h2>
-            <h3 class="kw3-feature-subtitle" id="leadSubtitle">Leveraging UCaaS, CcaS, and web development we can provide our customers with technology platforms that will impove sales, customer satisfaction, and drive efficiencies.</h3>
+            <h3 class="kw3-feature-subtitle" id="leadSubtitle">Leveraging UCaaS, CcaS, and web development we can provide our customers with technology platforms that will impove sales, customer satisfaction, and drive&nbsp;efficiencies.</h3>
             <div class="kw3-feature-grid award">
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fal fa-wifi" style="color: #333333;"></i>
+                        <i alt="Unified Communications as a Service" class="fal fa-wifi" style="color: #333333;"></i>
                     </div>
                     <h2 class="kw3-feature-title">UCAAS</h2>
                     <p>Unified Communications as a Service</p>
-                    <p style="font-weight: 200;font-style: italic;">Utilize the cloud to secure, scale, and connect your business at a fraction of the cost</p>
+                    <p style="font-weight: 200;font-style: italic;">Utilize the cloud to secure, scale, and connect your business at a fraction of the&nbsp;cost</p>
                     <a target="_blank" href="/app/assets/img/UCaaS.pdf" class="kw3-cta-button">learn more</a>
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fal fa-phone" style="color: #333333;"></i>
+                        <i alt="Contact Center as a Service" class="fal fa-phone" style="color: #333333;"></i>
                     </div>
                     <h2 class="kw3-feature-title">CCAAS</h2>
                     <p>Contact Center as a Service</p>
@@ -84,7 +96,7 @@
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fal fa-shield-alt" style="color: #333333;"></i>
+                        <i alt="IT assets disposition" class="fal fa-circle" style="color: #333333;"></i>
                     </div>
                     <h2 class="kw3-feature-title">ITAD</h2>
                     <p>IT Assets Disposition</p>
@@ -93,7 +105,7 @@
                 </div>
                 <div class="kw3-feature-item award">
                     <div class="kw3-feature-image">
-                        <i class="fal fa-save" style="color: #333333";></i>
+                        <i alt="Software Solutions" class="fal fa-browser" style="color: #333333";></i>
                     </div>
                     <h2 class="kw3-feature-title">SAAS</h2>
                     <p>Software as a Service</p>
@@ -103,7 +115,7 @@
             </div>
         </div>
     <div class="float-wrapper tri">
-        <div class="image-right-container">
+        <div class="image-right-container" alt="Software Solutions">
             <div class="triangle"></div>
             <div class="triangle2"></div>
             <div class="triangle3"></div>
@@ -112,7 +124,7 @@
             <div class="kw3-feature-block quote">
                 <h3 class="kw3-feature-block-title quote" id="nameGame" style="color: #333333;">We build software solutions</h3>
                 <a href="" id="changes"></a>
-                <h4 class="kw3-feature-title" id="nameGameSub">Software, just the way you like it. Our experienced software development team’s vast skillset allows us to offer you virtually any solution your company needs- from websites to mobile applications, setting up a blog to an online store, graphic design to social media marketing and website analytics. We will support you through every part of your company’s software workflow- all you have to do is give us a call!</h4>
+                <h4 class="kw3-feature-title" id="nameGameSub">Software, just the way you like it. Our experienced software development team’s vast skillset allows us to offer you virtually any solution your company needs- from websites to mobile applications, setting up a blog to an online store, graphic design to social media marketing and website analytics. We will support you through every part of your company’s software workflow- all you have to do is give us a&nbsp;call!</h4>
                 <a href="/software.html"><button class="kw3-cta-button">learn more</button></a>
                 <a id="assetsDisposition"></a>
             </div>
@@ -128,34 +140,34 @@
                 <i class="fas fa-circle" style="color: #333333;font-size: 42px;"></i>
             </div>
             <h2 style="color: #333333;">IT Assets Disposition</h2>
-            <p>IT asset disposition (ITAD) is a best in class business practice that provide financial, contractual and inventory functions to support life cycle management and strategic decision making for the IT environment. Assets include all legacy Telecommunications equipment, Personal Computers, Ethernet Switches and Routers that are found in the business environment.</p>
+            <p>IT asset disposition (ITAD) is a best in class business practice that provide financial, contractual and inventory functions to support life cycle management and strategic decision making for the IT environment. Assets include all legacy Telecommunications equipment, Personal Computers, Ethernet Switches and Routers that are found in the business&nbsp;environment.</p>
         </div>
         <div class="kw3-feature-item it">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image">
-                    <i class="fal fa-circle-notch"></i>
+                    <i alt="Get in touch with us for IT assets dispostion" class="fal fa-circle-notch"></i>
                 </div>
                 <div class="kw3-feature-text">
                     <h4>Get in touch</h4>
-                    <p>Shoot us an email or give us a call. We'll get an idea for your project requirements and our team of experts will be more than happy to discuss your needs and schedule an on-site visit to develop a disposal strategy.</p>
+                    <p>Shoot us an email or give us a call. We'll get an idea for your project requirements and our team of experts will be more than happy to discuss your needs and schedule an on-site visit to develop a disposal&nbsp;strategy.</p>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item it">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image">
-                    <i class="fal fa-circle"></i>
+                    <i alt="We offer on-site visits" class="fal fa-circle"></i>
                 </div>
                 <div class="kw3-feature-text">
                     <h4>On site visit</h4>
-                    <p>The on-site visit will allow us to survey the equipment that is being considered for disposal. Upon completion of the survey KingWorks3 will provide you with an audit of the equipment and a Scope of Work (SOW) will be generated to identify the steps required to complete the project.</p>
+                    <p>The on-site visit will allow us to survey the equipment that is being considered for disposal. Upon completion of the survey KingWorks3 will provide you with an audit of the equipment and a Scope of Work (SOW) will be generated to identify the steps required to complete the&nbsp;project.</p>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item it">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image">
-                    <i class="fal fa-adjust"></i>
+                    <i alt="We offer pick-up and removal of legacy items" class="fal fa-adjust"></i>
                 </div>
                 <div class="kw3-feature-text">
                     <h4>Asset pick-up & removal</h4>
@@ -171,7 +183,7 @@
         <div class="kw3-feature-item it">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image">
-                    <i class="fas fa-circle"></i>
+                    <i alt="Securely dispose of your data" class="fas fa-circle"></i>
                 </div>
                 <div class="kw3-feature-text">
                     <h4>Data wiped and devices disposed</h4>
@@ -179,7 +191,7 @@
                     <ul>
                         <li><i class="fal fa-bomb"></i>KW3 is responsible for the data wiping and destruction of information carrying devices</li>
                         <li><i class="fal fa-recycle"></i>KW3 is responsible for providing R2 Certified Recycling or a Certificate of destruction (where applicable)</li>
-                        <li><i class="fal fa-file-contract"></i>KW3 will provide a settlement within 45 days.  A credit will be issued for any equipment that is identified as eligible for re-sale</li>
+                        <li><i class="fal fa-file-contract"></i>KW3 will provide a settlement within 45 days.  A credit will be issued for any equipment that is identified as eligible for&nbsp;re-sale</li>
                     </ul>
                 </div>
             </div>
@@ -190,46 +202,43 @@
             <div class="kw3-feature-block quote">
                 <h3 class="kw3-feature-block-title quote" id="nameGame" style="color: #333333;">Unified Communications as a Service</h3>
                 <a href="" id="changes"></a>
-                <h4 class="kw3-feature-title" id="nameGameSub">UCaaS refers to a phone system that uses Voice over Internet Protocol to provide a Cloud based phone system for businesses. Often this service is provided by a network service provider as part of an overall network solution. Enjoy ultimate flexibility as access to “seats” are typically purchased on a monthly basis and can scale up and down as needed. There’s none of the capital equipment or hardware costs associated with legacy phone systems. </h4>
+                <h4 class="kw3-feature-title" id="nameGameSub">UCaaS refers to a phone system that uses Voice over Internet Protocol to provide a Cloud based phone system for businesses. Often this service is provided by a network service provider as part of an overall network solution. Enjoy ultimate flexibility as access to “seats” are typically purchased on a monthly basis and can scale up and down as needed. There’s none of the capital equipment or hardware costs associated with legacy phone&nbsp;systems. </h4>
                 <a target="_blank" href="/app/assets/img/UCaaS.pdf"><button class="kw3-cta-button">learn more</button></a>
             </div>
         </div>
         <div class="image-right-container" id="ucaasImg">
-            <img src="app/assets/img/uCaaS.png" />
+            <img alt="Unified Communications as a Service" src="app/assets/img/uCaaS.png" />
         </div>
     </div>
     <div class="kw3-feature-container partners">
         <h3 class="kw3-feature-title" style="color: #333333;">Our Partners</h3>
         <div class="kw3-feature-item partner">
             <div class="kw3-feature-item-content">
-                <i class="fal fa-award" title="Gold Partner"></i>
                 <div class="kw3-feature-image">
-                    <img src="app/assets/logos/effortless.png" />
+                    <img alt="Our gold partner Ring Central" src="app/assets/logos/ringcentral-logo.png" />
                 </div>
                 <div class="kw3-feature-text">
-                    <p>Effortless  is  an  industry-leading  cloud  solution  service  provider  offering  an  all-in-one, fully supported ecosystem of complementary products and services that allow businesses of all sizes to utilize a single supplier for their overall IT environment.</p>
+                    <p>The leading all-in-one phone, team messaging, and video conferencing solution. Unparalleled functionality, reliability, and value in one solution that’s easy to set up and&nbsp;manage.</p>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item partner">
             <div class="kw3-feature-item-content">
-                <i class="fal fa-award" title="Gold Partner"></i>
                 <div class="kw3-feature-image">
-                    <img id="windstreamLogo" src="app/assets/img/jive.jpg" />
+                    <img alt="Jive Featured Partner" id="windstreamLogo" src="app/assets/img/jive.jpg" />
                 </div>
                 <div class="kw3-feature-text">
-                    <p>Jive Hosted VoIP is the easiest and most affordable option for your business phone system. Jive’s cloud VoIP service helps thousands of organizations simplify how they manage their phone and conferencing setup.</p>
+                    <p>Jive Hosted VoIP is the easiest and most affordable option for your business phone system. Jive’s cloud VoIP service helps thousands of organizations simplify how they manage their phone and conferencing&nbsp;setup.</p>
                 </div>
             </div>
         </div>
         <div class="kw3-feature-item partner">
             <div class="kw3-feature-item-content">
-                <i class="fal fa-award" title="Gold Partner"></i>
                 <div class="kw3-feature-image">
-                    <img src="app/assets/logos/ringcentral-logo.png" />
+                    <img alt="Effortless Security Gold Partner" src="app/assets/logos/effortless.png" />
                 </div>
                 <div class="kw3-feature-text">
-                    <p>The leading all-in-one phone, team messaging, and video conferencing solution. Unparalleled functionality, reliability, and value in one solution that’s easy to set up and manage.</p>
+                    <p>Effortless  is  an  industry-leading  cloud  solution  service  provider  offering  an  all-in-one, fully supported ecosystem of complementary products and services that allow businesses of all sizes to utilize a single supplier for their overall IT&nbsp;environment.</p>
                 </div>
             </div>
         </div>
@@ -238,19 +247,19 @@
         <div class="kw3-feature-item price">
             <div class="kw3-feature-item-content">
                 <div class="kw3-feature-image" style="color:#f15a24;text-align: center;">
-                    <i class="far fa-comment-alt" style="font-size: 170px"></i>
+                    <i class="fal fa-comment-alt" style="font-size: 170px"></i>
                 </div>
                 <h2 class="price" style="color: #333333;">Get in touch with us!</h2>
                     <div class="kw3-feature-text">
-                        <p style="text-align: center;">Not finding what you're looking for or need some additional details on a service? Give us a call or message us! We're always available to discuss a solution & set up a time to meet. We're available by phone Monday-Friday 9-5 or feel free to leave us a message anytime!</p>
+                        <p style="text-align: center;">Not finding what you're looking for or need some additional details on a service? Give us a call or message us! We're always available to discuss a solution & set up a time to meet. We're available by phone Monday-Friday 9-5 or feel free to leave us a message&nbsp;anytime!</p>
                     </div>
                 <div class="kw3-feature-container small">
                     <div class="kw3-feature-item icon x2">
-                        <i title="chat now" class="fal fa-comment-alt active"></i>
-                        <p class="icon-on"><div data-id="VVOIOaLDr2h" class="livechat_button"><a href="https://www.livechatinc.com/best-live-chat-software/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887">best live chat software for 2020</a></div></p>
+                        <div data-id="40de6fb219" class="livechat_button"><a href="https://www.livechatinc.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887">chat</a></div>
+                        <p class="icon-on">Chat Now!</p>
                     </div>
                     <div class="kw3-feature-item icon x2">
-                        <i title="schedule a call" class="fal fa-phone phoneCall"></i>
+                        <a href="/team.html#contactUs"><i title="schedule a call" class="fal fa-phone phoneCall"></i></a>
                     </div>
                 </div>
             </div>
@@ -266,7 +275,7 @@
                 </ul>
                 <ul class="kw3-footer-links location" style="float: right;">
                     <li>
-                        <div class="location-bubble"></div>
+                        <a href="https://goo.gl/maps/1nRDmJp3BK26cE4D6" target="_blank"><div class="location-bubble"></div></a>
                     </li>
                     <li style="text-align: center;">Located in San Diego</li>
                     <li style="text-align: center;">
@@ -284,12 +293,6 @@
                     <li><a href="/index.html#assetsDisposition">IT Assets Disposition</a></li>
                 </ul>
                 <ul class="kw3-footer-links">
-                    <li class="footer-link-title">our partners</li>
-                    <li><a target="_blank" href="https://effortlessoffice.com/">Effortless</a></li>
-                    <li><a target="_blank" href="https://www.ringcentral.com/">Ring Central</a></li>
-                    <li><a target="_blank" href="https://www.jive.com/">Jive</a></li>
-                </ul>
-                <ul class="kw3-footer-links">
                     <li class="footer-link-title">contact</li>
                     <li><div data-id="VVOIOaLDr2h" class="livechat_button"><a href="https://www.livechatinc.com/customer-service/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10987887">customer service software</a></div></li>
                     <li><a href="mailto:hello@kingworks3.com">Email us</a></li>
@@ -297,6 +300,7 @@
                 <ul class="kw3-footer-links">
                     <li class="footer-link-title">about</li>
                     <li><a href="/team.html">Our Team</a></li>
+                    <li><a href="/team.html#contactUs">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -351,10 +355,6 @@ $(document).on('ready', function() {
         $('.kw3-nav').removeClass('modal');
         $('.phoneCall').css('pointer-events','all');
     }
-
-    $('.chat-button').on('click', '#chat-widget', function(e){
-        $('#chat-widget').trigger('click');
-    });
 
 })
 </script>

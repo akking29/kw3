@@ -114,7 +114,7 @@ $(document).ready(function() {
       console.log('height');
       $('#drawer').prependTo('body');
     } else {
-
+     // $('#drawer').insertAfter('#rankingsButton');
     }
 
     var width = $(window).width();
