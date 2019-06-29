@@ -53,7 +53,7 @@ footer {
     min-height: 100px;
     background-color: #f1f1f1;
     border-top: 5px solid #f1f1f1;
-    padding: 30px 0 60px;
+    padding: 0;
     position: relative;
 }
 
@@ -75,6 +75,10 @@ footer li span {
 
 footer li span i {
     font-size: 20px;
+}
+
+.kw3-footer .kw3-container {
+    padding: 50px 0 80px;
 }
 
 .kw3-footer-links.logo {
@@ -125,6 +129,20 @@ footer li span i {
 .location-bubble:hover {
     cursor: pointer;
     box-shadow: 0 0 0 5px #f15a24;
+}
+
+.kw3-footer-banner {
+    background: #f15a24;
+    color: #ffffff;
+    padding: 5px 50px;
+}
+
+.kw3-footer-banner p {
+    text-align: right;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #customChat a {
@@ -1042,6 +1060,7 @@ i.nav-extra {
 footer {
     background-size: cover;
     background-position: 50%;
+    padding:0;
 }
 
 .kw3-feature-container.it {
@@ -1499,7 +1518,7 @@ footer .icon-row a {
 
     .kw3-footer-links.location {
         right: 20px;
-        top: -170px;
+        top: -130px;
     }
     .kw3-feature-container.quote {
       padding-top: 40px;
@@ -1653,10 +1672,6 @@ footer .icon-row a {
         min-height: auto;
     }
 
-    footer {
-        padding: 20px 30px 60px;
-    }
-
     .float-wrapper.tri {
         padding: 0 70px;
     }
@@ -1737,6 +1752,10 @@ footer .icon-row a {
     .kw3-feature-item.team {
         width: 100%;
         margin: 50px 0; 
+    }
+
+    .kw3-footer .kw3-container {
+        padding: 50px 0 0;
     }
 
 }
@@ -1825,10 +1844,6 @@ footer .icon-row a {
         width: 200px;
     }
 
-    footer {
-        padding: 20px 0px 60px;
-    }
-
     footer ul {
         min-width: 27%;
     }
@@ -1844,6 +1859,12 @@ footer .icon-row a {
 }
 
 @media screen and (max-width: 767px) {
+    footer ul.logo {
+        width: 200px;
+    }
+    .kw3-footer .kw3-container {
+        padding: 30px 30px 80px;
+    }
     .kw3-feature-container.it .kw3-feature-item.contact h4 {
         font-size: 14px;
     }
@@ -1860,7 +1881,7 @@ footer .icon-row a {
     background: #ffffff;
 }
     .kw3-footer-links.location {
-        right: -10px;
+        right: 0px;
     }
     .kw3-feature-item.software.it .kw3-feature-image i {
         padding:0;
@@ -2007,7 +2028,7 @@ footer .icon-row a {
     }
 
     .kw3-footer-links.location {
-        top: -130px;
+        top: -100px;
     }
 
     .location-bubble {
@@ -2194,10 +2215,6 @@ footer .icon-row a {
         padding: 50px 10px 50px;
     }
 
-    footer {
-        padding: 20px 30px 60px;
-    }
-
     footer ul {
         width: 35%;
     }
@@ -2245,13 +2262,16 @@ footer .icon-row a {
     .kw3-nav-banner i {
         right: 245px;
     }
+    .kw3-footer-banner {
+        padding: 0 30px;
+    }
 
 }
 
 @media screen and (max-width: 480px) {
 
     .kw3-footer-links.location {
-        top: -120px;
+        top: -95px;
         right: -10px;
         min-width: auto;
         min-height: auto;
@@ -2268,10 +2288,6 @@ footer .icon-row a {
 
     .kw3-footer-links.logo {
         margin-bottom: 0px;
-    }
-
-    footer {
-        padding: 20px 15px 100px;
     }
 
     footer ul {
@@ -2328,8 +2344,8 @@ footer .icon-row a {
     }
 
     footer ul.kw3-footer-links.location {
-        width: 45%;
-        right: -15px;
+        width: 100px;
+        right: 25px;
     }
 
     .kw3-landing {
@@ -2346,6 +2362,9 @@ footer .icon-row a {
     .kw3-landing {
         background-size: 325%;
     }
+    .kw3-footer-banner {
+        padding: 0 15px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -2355,14 +2374,6 @@ footer .icon-row a {
 
     .kw3-footer-links.logo img {
         height: 15px;
-    }
-
-    footer {
-        padding-top: 10px;
-    }
-
-    footer ul.kw3-footer-links.location {
-        width: 50%;
     }
 
     .kw3-feature-container.partners {
