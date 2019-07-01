@@ -551,6 +551,10 @@ i.nav-extra {
     color: #ffffff;
 }
 
+.kw3-row.ucaas {
+    background: #f15a24;
+}
+
 #footballTrophy {
     position: absolute;
     font-size: 28px;
@@ -887,23 +891,30 @@ i.nav-extra {
 
 .kw3-feature-title.team,
 .kw3-feature-title.software,
-.kw3-feature-title.contact {
-    padding: 0 0 20px 0;
-    line-height: 1;
+.kw3-feature-title.contact,
+.kw3-feature-title.ccaas {
+    padding: 0 0 10px 0;
+    line-height: 1.5;
     margin-bottom: 0;
 }
 
 .kw3-feature-title.software,
-.kw3-feature-subtitle.software {
+.kw3-feature-subtitle.software,
+.kw3-feature-subtitle.ccaas {
     text-align: center;
     color: #333333;
 }
 
 .kw3-feature-subtitle.team,
-.kw3-feature-subtitle.software {
+.kw3-feature-subtitle.software,
+.kw3-feature-subtitle.ccaas  {
     margin-bottom: 100px;
     line-height: 1.5;
     font-size: 18px;
+}
+
+.kw3-feature-title.ccaas {
+    text-align: left;
 }
 
 .kw3-feature-subtitle.team {
@@ -1328,8 +1339,58 @@ footer .icon-row i {
     padding: 0 50px;
 }
 
-.kw3-feature-header.software {
+.kw3-feature-header.software,
+.kw3-feature-header.ucaas,
+.kw3-feature-header.ccaas{
     padding: 0 0;
+}
+
+.kw3-feature-header.ucaas img {
+    display: block;
+    margin: 40px auto;
+    width: 420px;
+    height: 400px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.kw3-feature-header.ccaas img {
+    width: 600px;
+    margin: 0px auto;
+    display: block;
+}
+
+.kw3-row.partner,
+.kw3-feature-container.partner {
+    background: #f1f1f1;
+}
+
+.kw3-feature-container.partner {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.kw3-row.partner .partner-img #partnerImg {
+    width: 100%;
+    height: 150px;
+    border-color: transparent;
+    background-image: url('/app/assets/img/partner_row.png');
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.kw3-row.partner .partner-img #partnerImg {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: .5s;
+}
+
+/* Disable grayscale on hover */
+.kw3-row.partner .partner-img #partnerImg.color {
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
 
 .kw3-feature-header.software .float-wrapper.tri {
@@ -1391,6 +1452,22 @@ footer .icon-row a {
 
 .kw3-row.team {
     margin-top: 80px;
+}
+
+.kw3-feature-container.it .kw3-cta-button.left {
+    margin: 0;
+    width: 100px;
+    background: white;
+    padding:3px 7px;
+    color: #f15a24;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    bottom: 2px;
+}
+
+.kw3-feature-container.it .kw3-cta-button.left a {
+    color: #f15a24;
 }
 
 @media screen and (max-width: 1500px) {
@@ -1479,6 +1556,10 @@ footer .icon-row a {
 
     .kw3-feature-title.software {
         margin-top: 50px;
+    }
+
+    .kw3-feature-title.ccaas {
+        margin-top: 0px;
     }
 
 }
@@ -1758,6 +1839,10 @@ footer .icon-row a {
         padding: 50px 0 0;
     }
 
+    .kw3-feature-subtitle.ccaas {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1856,11 +1941,44 @@ footer .icon-row a {
         width: 100%;
     }
 
+    .kw3-row.partner .partner-img {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .kw3-row.partner .partner-img #partnerImg {
+        background-image: url('/app/assets/img/partnerRow-sm.png');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        width: 100%;
+        margin-top: 30px;
+        height: 200px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
+    .kw3-feature-header.ccaas {
+        margin-top: 20px;
+    }
+    .kw3-feature-header.ccaas img { 
+        width: 360px;
+     }
+    .kw3-row.partner {
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+    .kw3-feature-container.it .kw3-cta-button.left { 
+        display: block;
+        margin: 20px auto;
+    }
     footer ul.logo {
         width: 200px;
+    }
+    .kw3-feature-header.ucaas img {
+        width: 280px;
+        height: 270px;
+        margin-top: 60px;
     }
     .kw3-footer .kw3-container {
         padding: 30px 30px 80px;
