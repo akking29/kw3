@@ -36,16 +36,7 @@ $(document).ready(function() {
             } else {
                 $('.kw3-nav').removeClass('scrolled');
             }
-            var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-            var os = $('#ccaasBens').offset().top; // pixels to the top of div1
-            var ht = $('#ccaasBens').height(); // height of div1 in pixels
-            // if you've scrolled further than the top of div1 plus it's height
-            // change the color. either by adding a class or setting a css property
-            if(scroll + 400 > os + ht){
-                $('#partnerImg').addClass('color');
-            } else {
-                $('#partnerImg').removeClass('color');
-            }
+
         });
     });
 
